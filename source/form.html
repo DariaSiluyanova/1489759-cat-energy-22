@@ -63,43 +63,59 @@
         <p class="form__lead">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
         <div class="form__data data">
-          <label class="data__label" for="name">Имя:*</label>
-          <div class="data__item">
-            <input class="data__input" type="text" id="name" name="name" placeholder="Барсик" required>
+          <div class="data__item data-field">
+            <label class="data-field__label" for="name">Имя:*</label>
+            <div class="data-field__input">
+              <input class="data-field__input-part" type="text" id="name" name="name" placeholder="Барсик" required>
+            </div>
           </div>
-          <label class="data__label" for="weight">Вес (кг):*</label>
-          <div class="data__item">
-            <input class="data__input" type="text" id="weight" name="weight" placeholder="7" required>
+          <div class="data__item data-field">
+            <label class="data-field__label" for="weight">Вес (кг):*</label>
+            <div class="data-field__input">
+              <input class="data-field__input-part" type="text" id="weight" name="weight" placeholder="7" required>
+            </div>
           </div>
-          <label class="data__label" for="age">Возраст (лет):</label>
-          <div class="data__item">
-            <input class="data__input" type="text" id="age" name="age" placeholder="7">
+          <div class="data__item data-field">
+            <label class="data-field__label" for="age">Возраст (лет):</label>
+            <div class="data-field__input">
+              <input class="data-field__input-part" type="text" id="age" name="age" placeholder="7">
+            </div>
           </div>
         </div>
 
         <div class="form__options option">
-          <label class="option__label">
-          <input class="option__input" type="radio" name="option" value="weight-loss" checked>Похудение
-          </label>
-          <label class="option__label">
-            <input class="option__input" type="radio" name="option" value="weight-gain">Набор массы
-          </label>
-          <label class="option__label">
-            <input class="option__input" type="radio" name="option" value="need-advice">Не знаю (нужен ваш совет)
-          </label>
+          <div class="option-item option-field">
+            <label class="option-field__label">
+              <input class="option-field__input" type="radio" name="option" value="weight-loss" checked>Похудение
+            </label>
+          </div>
+          <div class="option-item option-field">
+            <label class="option-field__label">
+              <input class="option-field__input" type="radio" name="option" value="weight-gain">Набор массы
+            </label>
+          </div>
+          <div class="option-item option-field">
+            <label class="option-field__label">
+              <input class="option-field__input" type="radio" name="option" value="need-advice">Не знаю (нужен ваш совет)
+            </label>
+          </div>
         </div>
 
         <div class="form__contacts data">
           <h2 class="data__title form__title">Контактные данные(владельца кота)</h2>
-          <label class="data__label" for="e-mail">e-mail:*</label>
-          <div class="data__item">
-            <input class="data__input" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
-            <svg class="data__icon-e-mail"></svg>
+          <div class="data-item data-field">
+            <label class="data-field__label" for="e-mail">e-mail:*</label>
+            <div class="data-field__input">
+              <input class="data-field__input-part" type="email" id="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" required>
+              <svg class="data-field__icon-e-mail"></svg>
+            </div>
           </div>
-          <label class="data__label" for="tel">Телефон:*</label>
-          <div class="data__item">
-            <input class="data__input" type="tel" pattern="8([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-            <svg class="data__icon-tel"></svg>
+          <div class="data-item data-field">
+            <label class="data-field__label" for="tel">Телефон:*</label>
+            <div class="data-field__input">
+              <input class="data-field__input-part" type="tel" pattern="8([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="data-field__icon-tel"></svg>
+            </div>
           </div>
         </div>
 
@@ -110,14 +126,22 @@
 
         <div class="form__additional-needs needs">
           <h2 class="needs-title form__title">Дополнительно</h2>
-          <input class="needs__input" type="checkbox" id="sweetener" name="sweetener" checked>
-          <label class="needs__label" for="sweetener">Сахарозаменитель</label>
-          <input class="needs__input" type="checkbox" id="water" name="water">
-          <label class="needs__label" for="water">Питьевая вода</label>
-          <input class="needs__input" type="checkbox" id="milk" name="milk">
-          <label class="needs__label" for="milk">Молоко</label>
-          <input class="needs__input" type="checkbox" id="vitamins" name="vitamins">
-          <label class="needs__label" for="vitamins">Витамины</label>
+          <div class="needs-item needs-field">
+            <input class="needs-field__input" type="checkbox" id="sweetener" name="sweetener" checked>
+            <label class="needs-field__label" for="sweetener">Сахарозаменитель</label>
+          </div>
+          <div class="needs-item needs-field">
+            <input class="needs-field__input" type="checkbox" id="water" name="water">
+            <label class="needs-field__label" for="water">Питьевая вода</label>
+          </div>
+          <div class="needs-item needs-field">
+            <input class="needs-field__input" type="checkbox" id="milk" name="milk">
+            <label class="needs-field__label" for="milk">Молоко</label>
+          </div>
+          <div class="needs-item needs-field">
+            <input class="needs-field__input" type="checkbox" id="vitamins" name="vitamins">
+            <label class="needs-field__label" for="vitamins">Витамины</label>
+          </div>
         </div>
 
         <button class="form__button button">Отправить заявку</button>
