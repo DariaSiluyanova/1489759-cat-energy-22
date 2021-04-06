@@ -4,11 +4,11 @@
 
 .promo__wrapper {
   outline: 3px solid pink;
-  padding: 27px 36px 0px 35px;
+  padding: 27px 36px 0 35px;
 }
 
 .promo__intro {
-  background-image: url('../../img/promo-background.png');
+  background-image: url("../../img/promo-background.png");
   background-repeat: no-repeat;
   background-color: $color-apple;
 }
