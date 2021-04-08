@@ -1,0 +1,6 @@
+@mixin title($size, $height) {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $height;
+}
