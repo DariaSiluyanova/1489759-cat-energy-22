@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+//Abstracts
+@import "abstracts/mixins";
+@import "abstracts/variables";
+//Base styles
+@import "base/base";
+@import "base/typography";
+//Components
+@import "components/address";
+@import "components/advantages";
+@import "components/button";
+@import "components/card-advantages";
+@import "components/card-example";
+@import "components/card-goal";
+@import "components/copy";
+@import "components/example";
+@import "components/goals";
+@import "components/logo";
+@import "components/main-nav";
+@import "components/page-footer";
+@import "components/page-header";
+@import "components/page-main";
+@import "components/promo";
+@import "components/results";
+@import "components/slider";
+@import "components/soc-button";
+@import "components/socials";

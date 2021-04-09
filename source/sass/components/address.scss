@@ -1,0 +1,17 @@
+.address {
+  outline: 3px solid firebrick;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.address__invite {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.address__name,
+.address__city {
+  font-size: 14px;
+  line-height: 20px;
+}
