@@ -34,7 +34,7 @@ a {
   @include title(36px, 36px);
   color: $color-white;
 
-  .form & {
+  &--form {
     color: $color-black;
   }
 }
