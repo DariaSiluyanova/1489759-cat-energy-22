@@ -1,0 +1,40 @@
+.form {
+  outline: 3px solid pink;
+  padding: 27px 0 32px;
+  font-size: 16px;
+  line-height: 18px;
+
+  &__title {
+    @include title(24px, 26px);
+    margin: 0;
+    color: $color-black;
+  }
+
+  &__lead {
+    font-size: 14px;
+    color: $color-black;
+  }
+
+  &__comments {
+    outline: 3px solid fuchsia;
+    margin-bottom: 23px;
+  }
+
+  &__comments-text {
+    color: $color-tundora;
+  }
+
+  &__reference {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__contacts {
+    margin-bottom: 24px;
+  }
+
+  &__additional-needs {
+    margin-bottom: 34px;
+  }
+}
