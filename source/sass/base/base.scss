@@ -34,7 +34,8 @@ a {
   @include title(36px, 36px);
   color: $color-white;
 
-  &--form {
+  &--form,
+  &--catalog {
     color: $color-black;
   }
 }
@@ -43,6 +44,18 @@ a {
   @include title(36px, 40px);
   margin: 0;
   padding-top: 27px;
+}
+
+.product-title {
+  margin: 0;
+
+  @include title(16px, 20px);
+  text-transform: uppercase;
+  color: $color-mine-shaft;
+
+  &--more {
+    color: $color-cod-gray;
+  }
 }
 
 .visually-hidden {

@@ -5,12 +5,15 @@
 @import "base/base";
 @import "base/typography";
 //Components
+@import "components/add";
 @import "components/address";
 @import "components/advantages";
 @import "components/button";
 @import "components/card-advantages";
 @import "components/card-example";
 @import "components/card-goal";
+@import "components/card";
+@import "components/catalog";
 @import "components/copy";
 @import "components/data-field";
 @import "components/data-owner";
@@ -20,8 +23,10 @@
 @import "components/goals";
 @import "components/logo";
 @import "components/main-nav";
+@import "components/more";
 @import "components/needs-field";
 @import "components/needs";
+@import "components/offer";
 @import "components/option-field";
 @import "components/option";
 @import "components/page-footer";
@@ -29,6 +34,8 @@
 @import "components/page-main";
 @import "components/promo";
 @import "components/results";
+@import "components/row";
 @import "components/slider";
 @import "components/soc-button";
 @import "components/socials";
+@import "components/table";

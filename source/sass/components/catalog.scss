@@ -1,0 +1,15 @@
+.catalog {
+  outline: 3px solid tan;
+  padding-top: 27px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__add-title {
+  @include title(24px, 24px);
+  color: $color-black;
+}
+
+// .catalog__add-item:last-of-type {
+//   margin-bottom: 39px;
+// }
