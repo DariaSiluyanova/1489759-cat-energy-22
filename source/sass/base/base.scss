@@ -22,23 +22,6 @@ a {
   color: inherit;
 }
 
-.title-style {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.page-title {
-  margin: 0;
-
-  @include title(36px, 36px);
-  color: $color-white;
-
-  &--form {
-    color: $color-black;
-  }
-}
-
 .title {
   @include title(36px, 40px);
   margin: 0;

@@ -1,0 +1,11 @@
+.page-title {
+  margin: 0;
+
+  @include title(36px, 36px);
+  color: $color-white;
+
+  &--form,
+  &--catalog {
+    color: $color-black;
+  }
+}
