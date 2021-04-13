@@ -4,6 +4,5 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
-  background: url("/img/catalog-bg-gift.png") no-repeat center/cover;
-  background-color: $color-apple;
+  background: $color-apple url("/img/catalog-bg-gift.png") no-repeat center/cover;
 }

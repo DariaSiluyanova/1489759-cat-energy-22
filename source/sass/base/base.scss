@@ -22,40 +22,10 @@ a {
   color: inherit;
 }
 
-.title-style {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.page-title {
-  margin: 0;
-
-  @include title(36px, 36px);
-  color: $color-white;
-
-  &--form,
-  &--catalog {
-    color: $color-black;
-  }
-}
-
 .title {
   @include title(36px, 40px);
   margin: 0;
   padding-top: 27px;
-}
-
-.product-title {
-  margin: 0;
-
-  @include title(16px, 20px);
-  text-transform: uppercase;
-  color: $color-mine-shaft;
-
-  &--more {
-    color: $color-cod-gray;
-  }
 }
 
 .visually-hidden {

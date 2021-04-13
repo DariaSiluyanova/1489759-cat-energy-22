@@ -1,0 +1,11 @@
+.product-title {
+  margin: 0;
+
+  @include title(16px, 20px);
+  text-transform: uppercase;
+  color: $color-mine-shaft;
+
+  &--more {
+    color: $color-cod-gray;
+  }
+}
