@@ -1,16 +1,57 @@
 .promo__wrapper {
   outline: 3px solid pink;
-  padding: 27px 36px 0 35px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .promo__intro {
-  background-image: url("/img/promo-background.png");
-  background-repeat: no-repeat;
-  background-color: $color-apple;
+  @media (min-width: $desktop) {
+    flex-basis: 50%;
+  }
+}
+
+.promo__intro--background {
+  background: $color-apple url("/img/promo-background.png") no-repeat center/cover;
+
+  @media (min-width: $tablet) {
+    background: transparent;
+  }
+}
+
+.promo__title {
+  padding-top: 27px;
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   color: $color-white;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+  }
+}
+
+.promo__wrapper .button {
+  @media (min-width: $tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .promo__image-can {
+    flex-basis: 50%;
+    order: 2;
+  }
 }

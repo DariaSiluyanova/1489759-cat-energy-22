@@ -3,16 +3,29 @@
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: $color-concrete;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
 }
 
 .address__invite {
   margin: 0;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .address__name,
 .address__city {
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+  }
 }
