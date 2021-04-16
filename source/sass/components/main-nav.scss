@@ -1,10 +1,17 @@
 .main-nav {
   outline: 3px solid fuchsia;
+  display: flex;
 }
 
 .main-nav__toggle {
   margin-left: auto;
   max-width: 24px;
+
+  @media (min-width: $tablet) {
+    .main-nav__toggle {
+      display: none;
+    }
+  }
 }
 
 .main-nav__list {
@@ -16,4 +23,16 @@
   font-size: 20px;
   line-height: 20px;
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }

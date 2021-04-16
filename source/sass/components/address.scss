@@ -1,5 +1,7 @@
 .address {
   outline: 3px solid firebrick;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: $color-concrete;
@@ -10,6 +12,7 @@
 }
 
 .address__invite {
+  grid-row: 1/-1;
   margin: 0;
   font-size: 16px;
   line-height: 18px;
@@ -22,6 +25,7 @@
 
 .address__name,
 .address__city {
+  grid-column: 2/3;
   font-size: 14px;
   line-height: 20px;
 
