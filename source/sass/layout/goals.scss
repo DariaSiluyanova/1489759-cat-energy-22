@@ -1,0 +1,7 @@
+.goals {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

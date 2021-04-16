@@ -1,0 +1,12 @@
+.button {
+  &--promo {
+    @media (min-width: $tablet) {
+      order: 1;
+      align-self: flex-start;
+    }
+
+    @media (min-width: $desktop) {
+      order: 3;
+    }
+  }
+}

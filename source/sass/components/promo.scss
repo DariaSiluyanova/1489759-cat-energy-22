@@ -1,18 +1,5 @@
 .promo__wrapper {
   outline: 3px solid pink;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-.promo__intro {
-  @media (min-width: $desktop) {
-    flex-basis: 50%;
-  }
 }
 
 .promo__intro--background {
@@ -36,22 +23,5 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-black;
-  }
-}
-
-.promo__wrapper .button {
-  @media (min-width: $tablet) {
-    order: 1;
-  }
-
-  @media (min-width: $desktop) {
-    order: 3;
-  }
-}
-
-@media (min-width: $tablet) {
-  .promo__image-can {
-    flex-basis: 50%;
-    order: 2;
   }
 }

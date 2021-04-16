@@ -1,0 +1,13 @@
+.address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.address__invite {
+  grid-row: 1/-1;
+}
+
+.address__name,
+.address__city {
+  grid-column: 2/3;
+}

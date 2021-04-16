@@ -1,0 +1,23 @@
+.main-nav {
+  display: flex;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
