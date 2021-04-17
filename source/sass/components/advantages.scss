@@ -1,3 +1,19 @@
 .advantages {
   outline: 3px solid darkblue;
 }
+
+.advantages__item:first-child {
+  background: no-repeat url("/img/card-plan-tablet-1.png") right/10%;
+}
+
+.advantages__item:nth-child(2) {
+  background: no-repeat url("/img/card-plan-tablet-2.png") right/15%;
+}
+
+.advantages__item:nth-child(3) {
+  background: no-repeat url("/img/card-plan-tablet-3.png") right/15%;
+}
+
+.advantages__item:nth-child(4) {
+  background: no-repeat url("/img/card-plan-tablet-4.png") right/15%;
+}

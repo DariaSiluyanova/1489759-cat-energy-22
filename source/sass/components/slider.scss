@@ -3,4 +3,8 @@
   line-height: 20px;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }

@@ -6,4 +6,33 @@
 .card-example__price {
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $desktop) {
+    grid-column: 1;
+    font-size: 20px;
+  }
+}
+
+.card-example__wrapper {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-example__list {
+  @media (min-width: $desktop) {
+    grid-column: 1;
+  }
+}
+
+.card-example__slider {
+  @media (min-width: $tablet) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row: 1/-1;
+    grid-column: 2;
+  }
 }

@@ -18,10 +18,12 @@
 @import "components/data-field";
 @import "components/data-owner";
 @import "components/data";
+@import "components/desc-text";
 @import "components/example";
 @import "components/form";
 @import "components/goals";
 @import "components/logo";
+@import "components/logo-layout";
 @import "components/main-nav";
 @import "components/more";
 @import "components/needs-field";
@@ -40,5 +42,11 @@
 @import "components/slider";
 @import "components/soc-button";
 @import "components/socials";
+@import "components/socials-layout";
 @import "components/table";
 @import "components/title-style";
+//layout
+@import "layout/body-layout";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main-layout";

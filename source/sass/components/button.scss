@@ -18,4 +18,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $tablet) {
+    min-width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

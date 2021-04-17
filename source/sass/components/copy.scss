@@ -1,5 +1,7 @@
 .copy {
   outline: 3px solid hotpink;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .copy__text {
