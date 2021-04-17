@@ -9,14 +9,6 @@
   }
 }
 
-.promo__intro--background {
-  background: $color-apple url("/img/promo-background.png") no-repeat center/cover;
-
-  @media (min-width: $tablet) {
-    background: transparent;
-  }
-}
-
 .promo__title {
   padding-top: 27px;
 }
@@ -36,6 +28,14 @@
 .promo__intro {
   @media (min-width: $desktop) {
     flex-basis: 50%;
+  }
+
+  &--background {
+    background: $color-apple url("/img/promo-background.png") no-repeat center/cover;
+
+    @media (min-width: $tablet) {
+      background: transparent;
+    }
   }
 }
 
