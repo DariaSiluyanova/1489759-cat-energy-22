@@ -1,0 +1,6 @@
+.form-layout {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
