@@ -1,3 +1,27 @@
 .data-field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   color: $color-tundora;
+}
+
+.data-field__label {
+  flex-grow: 0;
+}
+
+.data-field__input {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.data-field__input-part {
+  width: 100%;
+}
+
+.data-field__icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
 }

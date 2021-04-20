@@ -3,6 +3,14 @@
   display: flex;
   flex-wrap: wrap;
   padding: 11px 20px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px 0;
+  }
 }
 
 .page-header__main-nav {
@@ -11,6 +19,26 @@
 
   @media (min-width: $desktop) {
     flex-grow: 2;
+  }
+}
+
+.page-header__logo-simple {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__logo-dressed {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.page-header__logo-title {
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 

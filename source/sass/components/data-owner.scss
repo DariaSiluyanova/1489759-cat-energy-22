@@ -1,4 +1,21 @@
 .data-owner {
   outline: 3px solid red;
   padding-top: 26px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.data-owner__title {
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}
+
+.data-owner__item {
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+  }
 }

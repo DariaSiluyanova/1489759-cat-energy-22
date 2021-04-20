@@ -1,3 +1,25 @@
 .needs {
   outline: 3px solid gold;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.needs__title {
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.needs__item {
+  @media (min-width: $tablet) {
+    min-width: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    min-width: 0;
+  }
 }
