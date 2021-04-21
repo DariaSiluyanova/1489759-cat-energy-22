@@ -1,8 +1,52 @@
 .card {
   outline: 3px solid greenyellow;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas:
+    "img    img    title  gap"
+    "img    img    meta   meta"
+    "button button button button";
   padding: 11px 0 14px;
+
+  @media (min-width: $tablet) {
+    grid-template-areas:
+      "img    img    img    img"
+      "title  title  title  title"
+      "meta   meta   meta   meta"
+      "button button button button";
+    grid-template-rows: 2fr 1fr 1fr auto;
+    min-width: 324px;
+    min-height: 511px;
+    padding: 36px;
+    background: linear-gradient($color-white 20%, $color-concrete 10%);
+  }
+}
+
+.card__link-img {
+  grid-area: img;
+  text-align: center;
+}
+
+.card__title {
+  grid-area: title;
 }
 
 .card__meta {
+  grid-area: meta;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+  }
+}
+
+.card__button {
+  grid-area: button;
+}
+
+.card__link-title {
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

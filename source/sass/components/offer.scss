@@ -1,8 +1,22 @@
 .offer {
   outline: 3px solid green;
+  padding-top: 70px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
   background: $color-apple url("/img/catalog-bg-gift.png") no-repeat center/cover;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    min-height: 200px;
+  }
+}
+
+.offer__text {
+  @media (min-width: $tablet) {
+    max-width: 150px;
+    text-align: start;
+  }
 }

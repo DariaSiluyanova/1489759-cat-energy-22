@@ -7,5 +7,16 @@
 
   &--more {
     color: $color-cod-gray;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  &--add {
+    @media (min-width: $tablet) {
+      font-size: 20px;
+    }
   }
 }
