@@ -1,8 +1,22 @@
 .more {
   outline: 3px solid teal;
   padding: 25px 0;
+  text-align: center;
 }
 
 .more__lead {
   line-height: 16px;
+}
+
+.more__vertical-line {
+  display: none;
+}
+
+.more__horizontal-line {
+  display: none;
+}
+
+.more__button {
+  width: 100%;
+  padding: 10px 0;
 }
