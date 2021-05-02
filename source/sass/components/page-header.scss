@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 0 110px 0;
+    padding: 53px 110px 0;
   }
 }
 
@@ -23,6 +23,8 @@
 }
 
 .page-header__logo-simple {
+  display: block;
+
   @media (min-width: $tablet) {
     display: none;
   }
@@ -33,6 +35,18 @@
 
   @media (min-width: $tablet) {
     display: block;
+  }
+}
+
+.page-header__logo-dressed:hover {
+  @media (min-width: $tablet) {
+    fill-opacity: 0.8;
+  }
+}
+
+.page-header__logo-dressed:active {
+  @media (min-width: $tablet) {
+    fill-opacity: 0.6;
   }
 }
 

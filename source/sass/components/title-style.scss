@@ -6,4 +6,12 @@
   @media (min-width: $tablet) {
     font-size: 20px;
   }
+
+  &--loss,
+  &--gain {
+    @media (min-width: $tablet) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
 }

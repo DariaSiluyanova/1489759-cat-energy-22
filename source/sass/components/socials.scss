@@ -1,5 +1,10 @@
 .socials {
   outline: 3px solid goldenrod;
+  margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.socials__item {
+  margin: 0 15px;
 }

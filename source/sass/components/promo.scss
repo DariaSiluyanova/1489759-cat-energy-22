@@ -9,11 +9,31 @@
   }
 }
 
+.promo__wrapper-background {
+  background-image: url("/img/promo-background.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 50%;
+  }
+}
+
 .promo__title {
-  padding-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 41px 0;
+  }
 }
 
 .promo__slogan {
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   color: $color-white;
@@ -26,12 +46,23 @@
 }
 
 .promo__intro {
+  padding-top: 27px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 62px 206px 0 87px;
+    text-align: initial;
+  }
+
   @media (min-width: $desktop) {
     flex-basis: 50%;
+    margin: 0;
+    padding: 111px 0 0 80px;
   }
 
   &--background {
-    background: $color-apple url("/img/promo-background.png") no-repeat center/cover;
+    min-height: 320px;
+    background-color: $color-apple-promo;
 
     @media (min-width: $tablet) {
       background: transparent;
@@ -40,19 +71,34 @@
 }
 
 .promo__image-can {
+  margin-top: -130px;
+  background-color: transparent;
+
   @media (min-width: $tablet) {
     flex-basis: 50%;
     order: 2;
+    margin-top: -80px;
+    background: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 32px 0 0 -140px;
   }
 }
 
 .promo__button {
+  min-height: 40px;
+
   @media (min-width: $tablet) {
     order: 1;
+    margin-left: 87px;
     align-self: flex-start;
+    opacity: 0.99;
   }
 
   @media (min-width: $desktop) {
-    order: 3;
+    position: absolute;
+    top: 425px;
+    left: 100px;
   }
 }

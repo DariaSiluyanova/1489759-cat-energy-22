@@ -14,6 +14,28 @@
 .page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: $color-concrete;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__item {
+  margin: auto;
+  padding: 20px 0;
+
+  &--copy {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+  }
 }

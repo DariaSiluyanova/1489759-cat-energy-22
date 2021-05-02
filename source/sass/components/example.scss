@@ -1,1 +1,26 @@
-//will be soon
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (min-width: $desktop) {
+    justify-content: start;
+  }
+}
+
+.example__item {
+  margin-bottom: 26px;
+  max-width: 124px;
+  max-height: 64px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__item:not(:last-child) {
+  @media (min-width: $desktop) {
+    margin-right: 42px;
+  }
+}

@@ -33,16 +33,6 @@ img {
   height: auto;
 }
 
-.title {
-  @include title(36px, 40px);
-  padding-top: 27px;
-
-  @media (min-width: $tablet) {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;

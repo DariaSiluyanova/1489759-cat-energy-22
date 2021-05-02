@@ -2,10 +2,38 @@
   outline: 3px solid hotpink;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $desktop) {
+    justify-content: flex-end;
+  }
 }
 
 .copy__text {
+  order: 1;
+  margin-right: 30px;
   font-size: 16px;
-  line-height: auto;
   color: $color-tundora;
+}
+
+.copy__icon-link {
+  order: 2;
+}
+
+.copy__text:active {
+  opacity: 0.3;
+}
+
+.copy__icon {
+  @media (min-width: $desktop) {
+    margin-top: 10px;
+  }
+}
+
+.copy__icon-color:hover {
+  fill: $color-apple;
+}
+
+.copy__icon-color:active {
+  fill-opacity: 0.3;
 }

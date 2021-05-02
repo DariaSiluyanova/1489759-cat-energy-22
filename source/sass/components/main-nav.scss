@@ -16,6 +16,16 @@
   @media (min-width: $tablet) {
     width: 100%;
   }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 694px;
+    max-height: 720px;
+    padding: 69px 110px 585px 132px;
+    background-color: $color-apple-promo;
+  }
 }
 
 .main-nav__list {
@@ -32,5 +42,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $desktop) {
+    color: $color-white;
+  }
+}
+
+.main-nav__item:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item:active {
+  opacity: 0.3;
+}
+
+.main-nav__item--current {
+  padding-bottom: 8px;
+  border-bottom: 2px solid $color-apple-promo;
+
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $color-white;
   }
 }

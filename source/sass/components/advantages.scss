@@ -2,18 +2,54 @@
   outline: 3px solid darkblue;
 }
 
+.advantages__svg {
+  float: left;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    bottom: 160px;
+    left: 0;
+  }
+}
+
 .advantages__item:first-child {
-  background: no-repeat url("/img/card-plan-tablet-1.png") right/10%;
+  @media (min-width: $tablet) {
+    background: no-repeat url("/img/card-plan-tablet-1.png") 75% 80%;
+  }
 }
 
 .advantages__item:nth-child(2) {
-  background: no-repeat url("/img/card-plan-tablet-2.png") right/15%;
+  @media (min-width: $tablet) {
+    background: no-repeat url("/img/card-plan-tablet-2.png") 75% 80%;
+  }
 }
 
 .advantages__item:nth-child(3) {
-  background: no-repeat url("/img/card-plan-tablet-3.png") right/15%;
+  @media (min-width: $tablet) {
+    background: no-repeat url("/img/card-plan-tablet-3.png") 75% 80%;
+  }
 }
 
 .advantages__item:nth-child(4) {
-  background: no-repeat url("/img/card-plan-tablet-4.png") right/15%;
+  @media (min-width: $tablet) {
+    background: no-repeat url("/img/card-plan-tablet-4.png") 75% 80%;
+  }
+}
+
+.advantages__desc {
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 151px 30px 57px 0;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin: 0;
+  }
 }

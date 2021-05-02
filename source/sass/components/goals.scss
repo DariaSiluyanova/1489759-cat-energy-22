@@ -1,10 +1,37 @@
 .goals {
   outline: 3px solid green;
-  padding: 20px;
+  padding: 20px 0;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
+}
+
+.goals__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 77px 50px 53px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+  }
+}
+
+.goals__item:nth-child(2n+1) {
+  @media (min-width: $desktop) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.goals__item:last-child {
+  margin-bottom: 0;
 }

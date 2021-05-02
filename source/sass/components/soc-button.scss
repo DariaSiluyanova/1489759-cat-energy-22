@@ -1,1 +1,7 @@
-//will be soon
+.soc-button__icon-color:hover {
+  fill: $color-apple;
+}
+
+.soc-button__icon-color:active {
+  fill-opacity: 0.3;
+}

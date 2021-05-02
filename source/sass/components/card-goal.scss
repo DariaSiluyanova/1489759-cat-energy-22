@@ -1,8 +1,28 @@
 .card-goal {
-  background-color: $color-alto;
+  padding: 21px 33px 18px 20px;
+  background-color: $color-concrete;
+
+  @media (min-width: $tablet) {
+    position: relative;
+  }
 
   @media (min-width: $desktop) {
     flex-basis: 40%;
+  }
+}
+
+.card-goal__desc {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $color-alto;
+
+  @media (min-width: $tablet) {
+    margin: 0 210px 20px 0;
+    border: initial;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -10,9 +30,8 @@
   font-size: 24px;
   line-height: 37px;
 
-  @media (min-width: $tablet) {
-    font-size: 36px;
-    line-height: 36px;
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }
 
@@ -26,15 +45,68 @@
   }
 }
 
+.card-goal__catalog-link:active {
+  opacity: 0.3;
+}
+
 .card-goal__svg {
+  display: block;
+  float: left;
+  padding: 6px;
+  min-width: 50px;
+  min-height: 53px;
+  background-image: url("/img/card-goal-ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
   @media (min-width: $tablet) {
-    float: right;
-    width: 10%;
-    height: 100px;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    min-width: 200px;
+    min-height: 211px;
   }
 
   @media (min-width: $desktop) {
-    float: left;
-    width: 20%;
+    min-width: 90px;
+    min-height: 120px;
+    padding: 10px;
+  }
+
+  &--cat {
+    padding: 22px;
+    margin-right: 19px;
+    margin-left: 16px;
+
+    @media (min-width: $tablet) {
+      top: 47px;
+      right: 0;
+      padding: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 57px;
+      left: 50px;
+    }
+  }
+
+  &--panther {
+    padding: 12px;
+    min-width: 67px;
+    min-height: 28px;
+
+    @media (min-width: $tablet) {
+      right: -30px;
+      min-height: 200px;
+      padding: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 57px;
+      left: 20px;
+      min-height: 100px;
+      padding: 23px;
+    }
   }
 }
