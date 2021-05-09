@@ -1,8 +1,10 @@
 .logo-layout {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
 
   @media (min-width: $desktop) {
     justify-content: start;
+    padding: 0;
   }
 }

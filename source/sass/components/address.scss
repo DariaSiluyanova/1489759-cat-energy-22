@@ -1,14 +1,18 @@
 .address {
-  outline: 3px solid firebrick;
   display: grid;
-  grid-gap: 0 16px;
   grid-template-columns: 1fr 1fr;
   padding: 28px 19px;
   background-color: $color-concrete;
 
   @media (min-width: $tablet) {
-    grid-gap: 0 200px;
+    padding: 61px 71px;
+    grid-gap: 0 289px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    grid-gap: 0 85px;
+    padding: 64px 80px;
   }
 }
 
@@ -17,18 +21,12 @@
   align-self: top;
   margin: 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $color-black;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
-  }
-}
-
-.address__name {
-  @media (min-width: $tablet) {
-    margin: 0 0 22px;
+    line-height: 26px;
   }
 }
 
@@ -41,6 +39,28 @@
 
   @media (min-width: $tablet) {
     text-align: end;
+    font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+    font-size: 12px;
+  }
+}
+
+.address__name {
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.address__city {
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
   }
 }

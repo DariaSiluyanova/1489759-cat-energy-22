@@ -10,18 +10,24 @@
   @media (min-width: $tablet) {
     max-width: 162px;
     max-height: 77px;
-    padding: 15px 30px 20px;
+    padding: 15px 37px 20px;
+  }
+}
+
+.results + .results {
+  @media (min-width: $tablet) {
+    padding: 15px 16px 20px;
   }
 }
 
 .results__number {
   display: block;
-  margin: 0 0 15px;
+  margin: 0 0 8px;
   font-size: 24px;
   line-height: 24px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 11px;
+    margin: 0 0 12px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -31,20 +37,28 @@
   &::before {
     content: "";
     position: absolute;
-    top: 96%;
+    top: 97%;
     left: 0;
-    width: 12px;
+    width: 17px;
     background-color: transparent;
     border-top: 2px solid $color-silver;
+
+    @media (min-width: $tablet) {
+      width: 6%;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 96%;
+    top: 97%;
     right: 0;
-    width: 12px;
+    width: 17px;
     background-color: transparent;
     border-top: 2px solid $color-silver;
+
+    @media (min-width: $tablet) {
+      width: 6%;
+    }
   }
 }

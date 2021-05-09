@@ -1,41 +1,101 @@
 .slider {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+    padding-bottom: 77px;
+    background: linear-gradient($color-white, $color-white 32%, $color-galery 32%);
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+    padding-bottom: 77px;
+    background: linear-gradient($color-white, $color-white 32%, $color-galery 32%);
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 15px;
+    padding-bottom: 0;
+    background: transparent;
+  }
 }
 
 .slider__button {
   flex-grow: 1;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
   border: none;
 
+  @media (min-width: $tablet) {
+    position: relative;
+    padding: 0 22px;
+    font-size: 20px;
+  }
+
   &--before {
     text-align: end;
+
+    @media (min-width: $tablet) {
+      margin: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 0 0 0 127px;
+    }
   }
 
   &--after {
     text-align: start;
   }
+}
 
+.slider__button--before::after {
   @media (min-width: $tablet) {
-    font-size: 20px;
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 24px;
+    width: 45px;
+    height: 1px;
+    border-bottom: 1px dotted $color-silver;
+  }
+}
+
+.slider__button--after::after {
+  @media (min-width: $tablet) {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    width: 45px;
+    height: 1px;
+    border-bottom: 1px dotted $color-silver;
   }
 }
 
 .slider__image {
-  flex-basis: 100%;
-  margin-bottom: 23px;
-}
-
-.slider__input {
-  max-width: 84px;
+  position: absolute;
+  top: 142px;
+  max-width: 320px;
+  max-height: 280px;
 
   @media (min-width: $tablet) {
-    min-width: 428px;
+    position: static;
+    flex-grow: 1;
+    margin: 0 30px 18px;
+    max-width: 674px;
+    max-height: 708px;
   }
 
   @media (min-width: $desktop) {
-    min-width: 380px;
+    flex-basis: 100%;
+    margin: 0 0 50px 75px;
+    max-width: 660px;
+    max-height: 536px;
   }
 }

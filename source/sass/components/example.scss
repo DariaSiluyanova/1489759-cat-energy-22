@@ -1,8 +1,12 @@
 .example {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+  }
 
   @media (min-width: $desktop) {
     justify-content: start;
@@ -14,8 +18,13 @@
   max-width: 124px;
   max-height: 64px;
 
+  @media (min-width: $tablet) {
+    margin-right: 42px;
+  }
+
   @media (min-width: $desktop) {
-    margin-bottom: 55px;
+    margin-right: 0;
+    margin-bottom: 42px;
   }
 }
 

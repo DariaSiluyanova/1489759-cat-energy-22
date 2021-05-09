@@ -1,0 +1,23 @@
+.wrapper-bg {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    position: relative;
+    margin-bottom: 82px;
+    background: linear-gradient(to right, $color-white 50%, $color-bg-promo 70%);
+  }
+}
+
+.wrapper-bg::after {
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 720px;
+    height: 100%;
+    background-color: $color-apple-promo;
+  }
+}

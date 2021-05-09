@@ -1,3 +1,17 @@
+.logo::after {
+  content: "";
+  position: absolute;
+  top: 88px;
+  left: 21px;
+  min-width: 85%;
+  height: 1px;
+  background-color: $color-silver;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
 .logo__title-footer:hover {
   fill-opacity: 0.8;
 }

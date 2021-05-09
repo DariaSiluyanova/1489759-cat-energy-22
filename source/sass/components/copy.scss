@@ -1,8 +1,11 @@
 .copy {
-  outline: 3px solid hotpink;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding-top: 34px;
+  }
 
   @media (min-width: $desktop) {
     justify-content: flex-end;
@@ -11,23 +14,28 @@
 
 .copy__text {
   order: 1;
-  margin-right: 30px;
+  margin-top: 16px;
+  margin-left: 20px;
+
   font-size: 16px;
   color: $color-tundora;
+
+  @media (min-width: $tablet) {
+    margin-left: 37px;
+  }
 }
 
 .copy__icon-link {
   order: 2;
+  margin: 10px 20px;
+
+  @media (min-width: $tablet) {
+    margin: 12px 0 0 23px;
+  }
 }
 
 .copy__text:active {
   opacity: 0.3;
-}
-
-.copy__icon {
-  @media (min-width: $desktop) {
-    margin-top: 10px;
-  }
 }
 
 .copy__icon-color:hover {

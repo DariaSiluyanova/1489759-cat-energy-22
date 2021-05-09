@@ -1,55 +1,62 @@
-.advantages {
-  outline: 3px solid darkblue;
-}
-
 .advantages__svg {
   float: left;
+  margin-right: 19px;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 40px;
+    top: 39px;
     right: 150px;
     bottom: 160px;
     left: 0;
+    width: 80px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    margin: 0;
   }
 }
 
 .advantages__item:first-child {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-1.png") 75% 80%;
+    background: no-repeat url("/img/card-plan-tablet-1.png") 50% 75%;
   }
 }
 
 .advantages__item:nth-child(2) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-2.png") 75% 80%;
+    background: no-repeat url("/img/card-plan-tablet-2.png") 58% 75%;
   }
 }
 
 .advantages__item:nth-child(3) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-3.png") 75% 80%;
+    background: no-repeat url("/img/card-plan-tablet-3.png") 58% 75%;
   }
 }
 
 .advantages__item:nth-child(4) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-4.png") 75% 80%;
+    background: no-repeat url("/img/card-plan-tablet-4.png") 61% 75%;
   }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
 }
 
 .advantages__desc {
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 151px 30px 57px 0;
+    padding: 151px 60px 57px 0;
   }
-}
 
-.advantages__item {
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet) {
-    position: relative;
-    margin: 0;
+  @media (min-width: $desktop) {
+    padding: 151px 60px 57px 0;
+    font-size: 14px;
   }
 }
