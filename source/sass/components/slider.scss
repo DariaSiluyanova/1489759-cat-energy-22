@@ -7,19 +7,19 @@
   @media (min-width: $tablet) {
     padding-top: 55px;
     padding-bottom: 77px;
-    background: linear-gradient($color-white, $color-white 32%, $color-galery 32%);
-  }
-
-  @media (min-width: $tablet) {
-    padding-top: 55px;
-    padding-bottom: 77px;
-    background: linear-gradient($color-white, $color-white 32%, $color-galery 32%);
+    background-image: url("/img/example-after.png");
+    background-repeat: no-repeat;
+    background-position-x: 62%;
+    background-position-y: 30%;
   }
 
   @media (min-width: $desktop) {
     padding-top: 15px;
     padding-bottom: 0;
-    background: transparent;
+    background-image: url("/img/example-after.png");
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 15%;
   }
 }
 
@@ -86,16 +86,19 @@
 
   @media (min-width: $tablet) {
     position: static;
-    flex-grow: 1;
+    flex-basis: 100%;
     margin: 0 30px 18px;
     max-width: 674px;
     max-height: 708px;
   }
 
   @media (min-width: $desktop) {
-    flex-basis: 100%;
     margin: 0 0 50px 75px;
     max-width: 660px;
     max-height: 536px;
   }
+}
+
+.slider__range {
+  display: flex;
 }

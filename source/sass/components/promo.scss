@@ -61,7 +61,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 47px 180px 0 109px;
+    padding: 47px 77px 0 119px;
     text-align: initial;
   }
 
@@ -93,7 +93,7 @@
     order: 2;
     max-width: 624px;
     max-height: 709px;
-    margin: -80px 0 0 105px;
+    margin: -83px 0 0 113px;
     background: transparent;
   }
 
@@ -103,7 +103,7 @@
     height: 490px;
     top: 84px;
     left: 300px;
-    z-index: 2;
+    z-index: -1;
   }
 }
 
@@ -113,7 +113,7 @@
 
   @media (min-width: $tablet) {
     order: 1;
-    margin: -27px 0 0 103px;
+    margin: -27px 0 0 114px;
     align-self: flex-start;
     opacity: 0.99;
   }

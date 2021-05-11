@@ -1,5 +1,4 @@
 .advantages__svg {
-  float: left;
   margin-right: 19px;
 
   @media (min-width: $tablet) {
@@ -13,7 +12,8 @@
 }
 
 .advantages__item {
-  margin-bottom: 28px;
+  display: flex;
+  margin: 0;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -56,7 +56,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 151px 60px 57px 0;
+    padding: 151px 94px 57px 0;
     font-size: 14px;
   }
 }

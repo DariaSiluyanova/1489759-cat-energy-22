@@ -1,11 +1,6 @@
-.logo::after {
-  content: "";
-  position: absolute;
-  top: 88px;
-  left: 21px;
-  min-width: 85%;
-  height: 1px;
-  background-color: $color-silver;
+.logo {
+  padding-top: 36px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet) {
     background-color: transparent;

@@ -14,20 +14,21 @@
 
 .copy__text {
   order: 1;
-  margin-top: 16px;
+  margin-top: 30px;
   margin-left: 20px;
 
   font-size: 16px;
   color: $color-tundora;
 
   @media (min-width: $tablet) {
+    margin-top: 16px;
     margin-left: 37px;
   }
 }
 
 .copy__icon-link {
   order: 2;
-  margin: 10px 20px;
+  margin: 23px 20px;
 
   @media (min-width: $tablet) {
     margin: 12px 0 0 23px;

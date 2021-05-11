@@ -1,31 +1,38 @@
 .page-header {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding-top: 12px;
 
   @media (min-width: $tablet) {
-    padding: 24px 10px 0;
+    padding: 24px 0 0;
   }
 
   @media (min-width: $desktop) {
     padding: 55px 0 0 110px;
     margin: 0;
-    background-image: url("/img/promo-background.png");
-    background-repeat: no-repeat;
-    background-size: 41% 75%;
-    background-position: 119% 48%;
+  }
+}
+
+.page-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 17px 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 
 .page-header__main-nav {
-  position: absolute;
-  top: 24px;
-  right: 20px;
-
   @media (min-width: $desktop) {
     position: static;
-    margin-right: 110px;
+    margin-right: 97px;
     margin-bottom: 35px;
     flex-grow: 2;
     z-index: 100;
@@ -67,8 +74,7 @@
 
 .page-header__logo-title {
   display: block;
-  margin-top: 14px;
-  margin-right: 90px;
+  margin-top: 13px;
 
   @media (min-width: $tablet) {
     display: none;
@@ -84,7 +90,6 @@
 }
 
 .page-header__logo {
-  flex-grow: 1;
   margin-bottom: 17px;
 
   @media (min-width: $tablet) {

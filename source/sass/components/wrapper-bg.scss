@@ -5,7 +5,8 @@
   @media (min-width: $desktop) {
     position: relative;
     margin-bottom: 82px;
-    background: linear-gradient(to right, $color-white 50%, $color-bg-promo 70%);
+    background: linear-gradient(to right, $color-white 50%, $color-apple-promo 50%), linear-gradient(to right, $color-white 50%, $color-bg-promo 50%);
+    z-index: 2;
   }
 }
 
@@ -13,11 +14,15 @@
   @media (min-width: $desktop) {
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: -10;
     top: 0;
     right: 0;
-    width: 720px;
+    min-width: 80%;
     height: 100%;
-    background-color: $color-apple-promo;
+    background-image: url("/img/promo-background.png");
+    background-repeat: no-repeat;
+    background-size: 50% 85%;
+    background-position: 119% 48%;
+    opacity: 0.08;
   }
 }

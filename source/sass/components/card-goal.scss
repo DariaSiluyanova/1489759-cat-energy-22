@@ -3,46 +3,74 @@
   background-color: $color-concrete;
 
   @media (min-width: $tablet) {
-    padding: 32px 284px 56px 52px;
+    padding: 35px 43px 56px 54px;
   }
 
   @media (min-width: $desktop) {
-    padding: 31px 21px 58px 53px;
+    padding: 31px 24px 58px 53px;
   }
 
   &--gain {
-    @media (min-width: $tablet) {
-      padding-right: 313px;
-    }
-
     @media (min-width: $desktop) {
       padding-right: 0;
     }
   }
 }
 
+.card-goal__icon {
+  @media (min-width: $tablet) {
+    margin-left: 19px;
+  }
+}
+
+.card-goal__header {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+  }
+}
+
 .card-goal__image {
   position: relative;
+  margin-right: 19px;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop) {
+    order: 1;
+    margin-right: 53px;
+    margin-left: 0;
+  }
 }
 
 .card-goal__desc {
-  margin-bottom: 18px;
+  margin: 0 0 18px;
   padding: 10px 30px 24px 10px;
   border-bottom: 2px solid $color-alto;
 
   @media (min-width: $tablet) {
-    margin: 0 0 58px;
+    margin: -183px 240px 58px 0;
     padding: 0;
     border: initial;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 33px;
+    margin: 0 0 32px 0;
   }
 
   &--gain {
+    @media (min-width: $tablet) {
+      padding-right: 33px;
+    }
+
     @media (min-width: $desktop) {
-      margin-right: 22px;
+      margin-right: 32px;
     }
   }
 }
@@ -52,15 +80,8 @@
   font-size: 24px;
   line-height: 37px;
 
-  &--gain {
-    padding-left: 30px;
-
-    @media (min-width: $tablet) {
-      padding: 0;
-    }
-  }
-
   @media (min-width: $tablet) {
+    order: 1;
     margin: 45px 0 25px;
     text-align: start;
     font-size: 36px;
@@ -68,6 +89,7 @@
   }
 
   @media (min-width: $desktop) {
+    order: 2;
     text-align: center;
     margin-bottom: 74px;
   }
@@ -90,22 +112,21 @@
 }
 
 .card-goal__svg-circle {
-  position: absolute;
-  top: 9px;
-  left: 12px;
+  margin-top: 7px;
+  margin-left: 12px;
   width: 50px;
   height: 60px;
 
   @media (min-width: $tablet) {
-    top: 38px;
-    left: 372px;
+    margin-top: 38px;
+    margin-left: 12px;
     width: 245px;
     height: 245px;
   }
 
   @media (min-width: $desktop) {
-    top: 8px;
-    left: -10px;
+    margin-top: 8px;
+    margin-left: -10px;
     width: 117px;
     height: 117px;
   }
@@ -127,8 +148,8 @@
     left: 18px;
 
     @media (min-width: $tablet) {
-      top: 48px;
-      left: 424px;
+      top: 49px;
+      left: 65px;
       min-width: 140px;
     }
 
@@ -141,12 +162,11 @@
   }
 
   &--panther {
-    top: 26px;
-    left: 3px;
+    top: 23px;
+    left: 6px;
 
     @media (min-width: $tablet) {
       top: 103px;
-      left: 360px;
       min-width: 267px;
     }
 
