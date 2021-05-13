@@ -133,7 +133,7 @@
         </div>
         <div class="goals__item card-goal card-goal--gain">
           <div class="card-goal__header">
-            <div class="card-goal__image">
+            <div class="card-goal__image card-goal__image--panther">
               <img class="card-goal__svg card-goal__svg--panther" src="/img/card-goal-add-panther.svg" alt="Мощная пантера">
               <svg class="card-goal__svg-circle" width="60" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50%" cy="50%" r="40%" stroke="#68b738" fill="#68b738" stroke-width="5"/>
@@ -175,7 +175,7 @@
 
       <div class="card-example">
         <h2 class="card-example__title title">Живой пример</h2>
-        <p class="card-example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный&nbsp;корм на&nbsp;Cat&nbsp;Energy&nbsp;Slim.Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по&nbsp;-&nbsp;прежнему спит по 16 часов в день.</p>
+        <p class="card-example__desc">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный&nbsp;корм на&nbsp;Cat&nbsp;Energy&thinsp;Slim.Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по&nbsp;-&nbsp;прежнему спит по 16 часов в день.</p>
         <div class="card-example__wrapper">
           <dl class="card-example__list example">
             <div class="example__item results">
@@ -184,13 +184,19 @@
             </div>
             <div class="example__item results">
               <dt class="results__number title-style">60 дней</dt>
-              <dd class="results__desc desc-text">затраченного времени</dd>
+              <dd class="results__desc desc-text">затраченo времени</dd>
             </div>
           </dl>
           <p class="card-example__price title-style">Затраты на питание: 15&nbsp;000 руб.</p>
           <div class="card-example__slider slider">
-            <img class="slider__image" src="/img/example-before.png" alt="Толстый кот">
-            <img class="slider__image" src="/img/example-after.png" alt="Кот в хорошей форме" hidden>
+            <div class="slider__image-wrapper">
+              <div class="slider__image-container">
+                <img class="slider__image" src="/img/example-before.png" alt="Толстый кот">
+              </div>
+              <div class="slider__image-container--after">
+                <img class="slider__image slider__image--after" src="/img/example-after.png" alt="Кот в хорошей форме">
+              </div>
+            </div>
             <div class="slider__range">
               <button class="slider__button slider__button--before title-style">Было</button>
               <div class="slider__slicer slicer">

@@ -3,23 +3,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 5px;
 
   @media (min-width: $tablet) {
-    padding-top: 55px;
+    padding-top: 43px;
     padding-bottom: 77px;
-    background-image: url("/img/example-after.png");
-    background-repeat: no-repeat;
-    background-position-x: 62%;
-    background-position-y: 30%;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop) {
     padding-top: 15px;
     padding-bottom: 0;
-    background-image: url("/img/example-after.png");
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: 15%;
   }
 }
 
@@ -78,15 +72,50 @@
   }
 }
 
+.slider__image-container {
+  position: relative;
+  width: 320px;
+  height: 280px;
+
+  @media (min-width: $tablet) {
+    position: static;
+    width: 375px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop) {
+    width: 435px;
+    height: 517px;
+    overflow: hidden;
+  }
+
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet) {
+      position: relative;
+      display: block;
+      width: 375px;
+      height: 517px;
+      overflow: hidden;
+    }
+
+    @media (min-width: $desktop) {
+      width: 300px;
+    }
+  }
+}
+
 .slider__image {
   position: absolute;
-  top: 142px;
+  top: 0;
+  left: 0;
   max-width: 320px;
   max-height: 280px;
 
   @media (min-width: $tablet) {
     position: static;
-    flex-basis: 100%;
     margin: 0 30px 18px;
     max-width: 674px;
     max-height: 708px;
@@ -97,8 +126,35 @@
     max-width: 660px;
     max-height: 536px;
   }
+
+  &--after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 0;
+      left: -65%;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop) {
+      left: -90%;
+    }
+  }
+}
+
+.slider__image-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 41px;
+  }
 }
 
 .slider__range {
   display: flex;
+  flex-basis: 100%;
+  margin: auto;
 }

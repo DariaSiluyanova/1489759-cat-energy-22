@@ -13,7 +13,7 @@
 
 .advantages__item {
   display: flex;
-  margin: 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -50,9 +50,11 @@
 }
 
 .advantages__desc {
+  margin: 0;
+
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 151px 60px 57px 0;
+    padding: 151px 62px 57px 0;
   }
 
   @media (min-width: $desktop) {

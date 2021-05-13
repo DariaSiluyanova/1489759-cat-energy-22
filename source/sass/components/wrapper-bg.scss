@@ -5,24 +5,7 @@
   @media (min-width: $desktop) {
     position: relative;
     margin-bottom: 82px;
-    background: linear-gradient(to right, $color-white 50%, $color-apple-promo 50%), linear-gradient(to right, $color-white 50%, $color-bg-promo 50%);
+    background: linear-gradient(to right, $color-white 50%, $color-apple-promo 50%), no-repeat url("/img/promo-bg-desktop.png") right/contain, linear-gradient(to right, $color-white 50%, $color-bg-promo 50%);
     z-index: 2;
-  }
-}
-
-.wrapper-bg::after {
-  @media (min-width: $desktop) {
-    content: "";
-    position: absolute;
-    z-index: -10;
-    top: 0;
-    right: 0;
-    min-width: 80%;
-    height: 100%;
-    background-image: url("/img/promo-background.png");
-    background-repeat: no-repeat;
-    background-size: 50% 85%;
-    background-position: 119% 48%;
-    opacity: 0.08;
   }
 }
