@@ -2,21 +2,19 @@
   position: relative;
   padding: 14px 19px 0;
   text-align: center;
-  border-top: 2px solid $color-silver;
-  border-right: 2px solid $color-silver;
-  border-left: 2px solid $color-silver;
-  border-radius: 5px;
+  border: 1px solid $color-silver;
+  border-radius: 3px;
 
   @media (min-width: $tablet) {
-    max-width: 162px;
+    min-width: 162px;
     max-height: 77px;
-    padding: 15px 37px 20px;
+    padding: 15px 9px 20px;
   }
 }
 
 .results + .results {
   @media (min-width: $tablet) {
-    padding: 15px 24px 20px;
+    padding: 15px 10px 20px;
   }
 }
 
@@ -34,31 +32,16 @@
 }
 
 .results__desc {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 97%;
-    left: 0;
-    width: 17px;
-    background-color: transparent;
-    border-top: 2px solid $color-silver;
+  display: inline-block;
+  background-color: $color-mercury;
+  padding: 0 7px;
+  margin-top: 0;
 
-    @media (min-width: $tablet) {
-      width: 6%;
-    }
+  @media (min-width: $tablet) {
+    background-color: $color-white;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 97%;
-    right: 0;
-    width: 17px;
-    background-color: transparent;
-    border-top: 2px solid $color-silver;
-
-    @media (min-width: $tablet) {
-      width: 6%;
-    }
+  @media (min-width: $desktop) {
+    background-color: $color-concrete;
   }
 }

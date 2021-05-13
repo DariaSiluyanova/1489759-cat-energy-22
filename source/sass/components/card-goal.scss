@@ -40,15 +40,14 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    right: 0;
-    margin-right: 71px;
+    right: 50px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
     order: 1;
-    margin-right: 53px;
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: 50px;
   }
 
   &--panther {
@@ -56,11 +55,12 @@
     margin-right: 5px;
 
     @media (min-width: $tablet) {
-      margin-right: 66px;
+      right: 65px;
     }
 
     @media (min-width: $desktop) {
-      margin-right: 53px;
+      margin-right: 0;
+      margin-left: 57px;
     }
   }
 }
@@ -78,6 +78,8 @@
 
   @media (min-width: $desktop) {
     margin: 0 0 32px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &--gain {
