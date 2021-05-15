@@ -11,8 +11,8 @@
   }
 
   @media (min-width: $desktop) {
-    grid-gap: 0 85px;
-    padding: 66px 80px 35px;
+    grid-gap: 0 30px;
+    padding: 66px 28px 15px 80px;
   }
 }
 
@@ -45,7 +45,8 @@
 
   @media (min-width: $desktop) {
     text-align: start;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

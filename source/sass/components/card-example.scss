@@ -44,6 +44,7 @@
     max-width: 100%;
     justify-self: stretch;
     margin-right: 0;
+    padding-top: 16px;
     padding-right: 35px;
     text-align: center;
     font-size: 20px;
@@ -62,7 +63,7 @@
 
 .card-example__wrapper {
   position: relative;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -73,6 +74,7 @@
   @media (min-width: $desktop) {
     position: static;
     grid-column: 1/-1;
+    padding-top: 30px;
     padding-bottom: 65px;
   }
 }

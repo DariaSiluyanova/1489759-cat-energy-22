@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet) {
     min-width: 162px;
-    max-height: 77px;
+    max-height: 70px;
     padding: 15px 9px 20px;
   }
 }
@@ -25,7 +25,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet) {
-    margin: 0 0 12px;
+    margin: 0 0 4px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -33,11 +33,12 @@
 
 .results__desc {
   display: inline-block;
-  background-color: $color-mercury;
-  padding: 0 7px;
   margin-top: 0;
+  padding: 0 7px;
+  background-color: $color-mercury;
 
   @media (min-width: $tablet) {
+    padding: 0 5px;
     background-color: $color-white;
   }
 
