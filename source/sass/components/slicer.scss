@@ -1,0 +1,54 @@
+.slicer {
+  padding: 0 15px;
+
+  @media (min-width: $tablet) {
+    padding: 8px 0 0 3px;
+  }
+}
+
+.slicer__scale {
+  min-width: 86px;
+  height: 16px;
+  margin: 4px 0 0;
+  padding: 0;
+  background-color: $color-white;
+  border: 1px solid $color-silver;
+  border-radius: 20px;
+
+  @media (min-width: $tablet) {
+    min-width: 428px;
+    height: 5px;
+    margin: 0;
+    background-color: $color-alto-darken;
+    border: none;
+  }
+}
+
+.slicer__bar {
+  width: 40%;
+  height: 6px;
+  margin: 4px;
+  background-color: $color-apple;
+  border-radius: 20px;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.slicer__toggle {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: -20px auto;
+    background-color: $color-apple;
+    border: 12px solid $color-white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px $color-silver;
+    cursor: pointer;
+  }
+}

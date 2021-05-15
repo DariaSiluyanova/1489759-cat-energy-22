@@ -1,10 +1,29 @@
 .goals {
-  outline: 3px solid green;
-  padding: 20px;
+  padding: 0;
 
   @media (min-width: $desktop) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+  }
+}
+
+.goals__item {
+  margin: 21px 20px 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 30px 0;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 0;
+    flex-basis: 50%;
+    margin: 0;
+  }
+}
+
+.goals__item:first-child {
+  @media (min-width: $desktop) {
+    margin-right: 80px;
   }
 }

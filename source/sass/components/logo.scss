@@ -1,1 +1,16 @@
-//will be soon
+.logo {
+  padding-top: 36px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
+.logo__title-footer:hover {
+  fill-opacity: 0.8;
+}
+
+.logo__title-footer:active {
+  fill-opacity: 0.6;
+}

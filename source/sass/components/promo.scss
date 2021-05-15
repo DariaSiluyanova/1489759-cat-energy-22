@@ -1,19 +1,49 @@
+.promo {
+  @media (min-width: $desktop) {
+    padding-right: 700px;
+    padding-left: 80px;
+  }
+}
+
 .promo__wrapper {
-  outline: 3px solid pink;
+  position: relative;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $desktop) {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 183px;
+  }
+}
+
+.promo__wrapper-background {
+  background-image: url("/img/promo-background.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 302px;
+  background-color: $color-bg-promo;
+
+  @media (min-width: $tablet) {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 50%;
   }
 }
 
 .promo__title {
-  padding-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 40px 0;
+  }
 }
 
 .promo__slogan {
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   color: $color-white;
@@ -26,12 +56,24 @@
 }
 
 .promo__intro {
+  padding-top: 27px;
+  padding-left: 0;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 47px 77px 0 119px;
+    text-align: initial;
+  }
+
   @media (min-width: $desktop) {
     flex-basis: 50%;
+    margin: 0 0 9px 0;
+    padding: 82px 25px 0 0;
   }
 
   &--background {
-    background: $color-apple url("/img/promo-background.png") no-repeat center/cover;
+    min-height: 302px;
+    background-color: $color-apple-promo;
 
     @media (min-width: $tablet) {
       background: transparent;
@@ -40,19 +82,43 @@
 }
 
 .promo__image-can {
+  align-self: center;
+  margin-top: -135px;
+  margin-bottom: 3px;
+  max-width: 280px;
+  background-color: transparent;
+
   @media (min-width: $tablet) {
-    flex-basis: 50%;
+    align-self: stretch;
     order: 2;
+    max-width: 624px;
+    max-height: 709px;
+    margin: -83px 0 0 113px;
+    background: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    width: 534px;
+    height: 496px;
+    top: 83px;
+    left: 285px;
+    z-index: -1;
   }
 }
 
 .promo__button {
+  min-height: 40px;
+  margin: 0 20px;
+
   @media (min-width: $tablet) {
     order: 1;
+    margin: -27px 0 0 114px;
     align-self: flex-start;
+    opacity: 0.99;
   }
 
   @media (min-width: $desktop) {
-    order: 3;
+    margin: 0;
   }
 }

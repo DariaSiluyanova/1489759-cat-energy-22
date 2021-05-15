@@ -1,1 +1,14 @@
-//will be soon
+.soc-button__icon-color:hover {
+  stroke: $color-apple;
+}
+
+.soc-button__icon-color:active {
+  stroke-opacity: 0.3;
+}
+
+.soc-button__icon {
+  @media (min-width: $tablet) {
+    min-width: 32px;
+    min-height: 25px;
+  }
+}

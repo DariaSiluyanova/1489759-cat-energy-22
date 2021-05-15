@@ -1,9 +1,48 @@
+.results {
+  position: relative;
+  padding: 14px 19px 0;
+  text-align: center;
+  border: 1px solid $color-silver;
+  border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    min-width: 162px;
+    max-height: 70px;
+    padding: 15px 9px 20px;
+  }
+}
+
+.results + .results {
+  @media (min-width: $tablet) {
+    padding: 15px 10px 20px;
+  }
+}
+
 .results__number {
+  display: block;
+  margin: 0 0 8px;
   font-size: 24px;
   line-height: 24px;
 
   @media (min-width: $tablet) {
+    margin: 0 0 4px;
     font-size: 30px;
     line-height: 37px;
+  }
+}
+
+.results__desc {
+  display: inline-block;
+  margin-top: 0;
+  padding: 0 7px;
+  background-color: $color-mercury;
+
+  @media (min-width: $tablet) {
+    padding: 0 5px;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $color-concrete;
   }
 }

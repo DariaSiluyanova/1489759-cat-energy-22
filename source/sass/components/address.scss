@@ -1,14 +1,18 @@
 .address {
-  outline: 3px solid firebrick;
   display: grid;
-  grid-gap: 0 16px;
   grid-template-columns: 1fr 1fr;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding: 28px 19px;
   background-color: $color-concrete;
 
   @media (min-width: $tablet) {
+    padding: 61px 70px;
+    grid-gap: 0 289px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop) {
+    grid-gap: 0 30px;
+    padding: 66px 28px 15px 80px;
   }
 }
 
@@ -17,23 +21,47 @@
   align-self: top;
   margin: 0;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $color-black;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
   }
 }
 
 .address__name,
 .address__city {
   grid-column: 2/3;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
 
   @media (min-width: $tablet) {
     text-align: end;
+    font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.address__name {
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 15px;
+  }
+}
+
+.address__city {
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
   }
 }

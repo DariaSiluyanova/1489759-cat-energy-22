@@ -1,4 +1,8 @@
 .socials-layout {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop) {
+    justify-content: center;
+  }
 }
