@@ -1,3 +1,48 @@
 .option-field {
   color: $color-mine-shaft;
 }
+
+.option-field__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.option-field__input + .option-field__label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.option-field__input + .option-field__label::before {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $color-silver;
+  border-radius: 50%;
+  margin-right: 0.9em;
+}
+
+.option-field__input:checked + .option-field__label::before {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: $color-apple;
+  box-shadow: inset 0 0 0 0.5em $color-white;
+}
+
+.option-field__input:not(:disabled) + .option-field__label:hover::before {
+  border-color: $color-silver-light;
+}
+
+.option-field__input:disabled + .option-field__label::before {
+  opacity: 0.3;
+}

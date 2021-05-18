@@ -8,6 +8,10 @@
     padding: 61px 70px;
     grid-gap: 0 289px;
     background-color: transparent;
+
+    &--bg {
+      background-color: $color-concrete;
+    }
   }
 
   @media (min-width: $desktop) {

@@ -78,6 +78,12 @@
   }
 }
 
+.main-nav__item--font {
+  @media (min-width: $desktop) {
+    color: $color-black;
+  }
+}
+
 .main-nav__item:last-child {
   @media (min-width: $tablet) {
     margin-right: 13px;
