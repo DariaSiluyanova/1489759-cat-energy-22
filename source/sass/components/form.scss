@@ -1,53 +1,79 @@
 .form {
-  outline: 3px solid pink;
-  padding: 27px 0 32px;
+  padding: 25px 0 0;
   font-size: 16px;
   line-height: 18px;
+  border-top: 2px solid $color-alto;
 
   @media (min-width: $tablet) {
+    padding-top: 47px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    border-top: none;
   }
 }
 
 .form__title {
   @include title(24px, 26px);
-  margin: 0;
   color: $color-black;
 
   @media (min-width: $tablet) {
     font-size: 36px;
     line-height: 36px;
+
+    &--comments,
+    &--additional {
+      padding: 0 40px 0 40px;
+    }
+  }
+}
+
+.form__title-main {
+  margin: 0 0 38px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
   }
 }
 
 .form__lead {
+  margin: 0 0 40px;
   font-size: 14px;
   color: $color-black;
 
   @media (min-width: $tablet) {
+    margin: 0 230px 63px 0;
+    font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 66px;
   }
 }
 
 .form__comments {
-  outline: 3px solid fuchsia;
   margin-bottom: 23px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 84px;
+  }
 
   @media (min-width: $desktop) {
     grid-column: 1/-1;
-  }
-}
-
-.form__comments-text {
-  color: $color-tundora;
-
-  @media (min-width: $tablet) {
-    width: 100%;
+    margin-bottom: 88px;
   }
 }
 
 .form__contacts {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 88px;
+  }
 
   @media (min-width: $desktop) {
     grid-column: 1/-1;
@@ -55,16 +81,31 @@
 }
 
 .form__additional-needs {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 73px;
+  }
 
   @media (min-width: $desktop) {
     grid-column: 1/-1;
   }
 }
 
-.form__options {
+.form__data {
   @media (min-width: $desktop) {
-    margin-top: 130px;
+    flex-basis: 50%;
+  }
+}
+
+.form__options {
+  @media (min-width: $tablet) {
+    margin: 0 70px 0;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    margin: 242px 0 0 39px;
   }
 }
 
@@ -78,18 +119,73 @@
   }
 }
 
+.form__wrapper-data {
+  @media (min-width: $tablet) {
+    margin-bottom: 96px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 89px;
+    padding: 0 112px;
+  }
+}
+
 .form__button {
-  flex-grow: 1;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .form__reference {
+  align-self: center;
   margin: 0;
   font-size: 14px;
-  line-height: 16px;
 
   @media (min-width: $tablet) {
-    display: flex;
-    flex-grow: 1;
     font-size: 16px;
   }
+}
+
+.form__stripe {
+  height: 3px;
+  background-color: $color-apple;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.form__input {
+  border: 2px solid $color-concrete;
+}
+
+.form__input:hover {
+  border: 2px solid $color-silver;
+  outline: none;
+}
+
+.form__input:focus {
+  border: 2px solid $color-tundora;
+  outline: none;
+}
+
+.form__input:focus:invalid {
+  border: 2px solid $color-coral;
+  outline: none;
+}
+
+.form__input:focus + .data-field__icon {
+  fill: $color-apple;
+  color: $color-apple;
+}
+
+.form__input:focus:invalid + .data-field__icon {
+  fill: $color-coral;
+  color: $color-coral;
 }

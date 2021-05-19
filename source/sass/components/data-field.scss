@@ -1,12 +1,28 @@
 .data-field {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   color: $color-tundora;
 }
 
 .data-field__label {
-  flex-grow: 0;
+  margin-right: 15px;
+
+  @media (min-width: $tablet) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 17px;
+  }
+}
+
+.data-field__label--contact {
+  margin-right: 13px;
+
+  @media (min-width: $tablet) {
+    margin-right: 17px;
+  }
 }
 
 .data-field__input {
@@ -17,11 +33,36 @@
 
 .data-field__input-part {
   width: 100%;
+  padding: 11px 10px;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet) {
+    padding: 10px 16px;
+    font-size: 20px;
+  }
+}
+
+.data-field__input-part--contact {
+  @media (min-width: $tablet) {
+    padding: 8px 23px;
+  }
+}
+
+.data-field__input-part--tel {
+  @media (min-width: $tablet) {
+    padding-left: 17px;
+  }
 }
 
 .data-field__icon {
   position: absolute;
   z-index: 1;
-  top: 10px;
-  right: 10px;
+  top: 14px;
+  right: 15px;
+
+  @media (min-width: $tablet) {
+    top: 16px;
+    right: 17px;
+  }
 }
