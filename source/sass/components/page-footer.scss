@@ -54,14 +54,14 @@
   display: flex;
   justify-content: center;
   margin: 0 20px;
-  padding: 25px 0 13px;
+  padding: 21px 0 16px;
   border-width: 1px 0;
   border-style: solid;
   border-color: $color-silver;
 
   @media (min-width: $tablet) {
     margin: 0 30px;
-    padding: 47px 0 13px;
+    padding: 50px 0 10px;
     border: none;
   }
 }

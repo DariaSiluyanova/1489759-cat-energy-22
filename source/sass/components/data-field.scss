@@ -18,7 +18,7 @@
 }
 
 .data-field__label--contact {
-  margin-right: 10px;
+  margin-right: 13px;
 
   @media (min-width: $tablet) {
     margin-right: 17px;
@@ -46,6 +46,12 @@
 .data-field__input-part--contact {
   @media (min-width: $tablet) {
     padding: 8px 23px;
+  }
+}
+
+.data-field__input-part--tel {
+  @media (min-width: $tablet) {
+    padding-left: 17px;
   }
 }
 

@@ -160,3 +160,31 @@
     display: none;
   }
 }
+
+.form__input {
+  border: 2px solid $color-concrete;
+}
+
+.form__input:hover {
+  border: 2px solid $color-silver;
+}
+
+.form__input:focus {
+  border: 2px solid $color-tundora;
+  outline: 1px solid $color-tundora;
+}
+
+.form__input:focus:invalid {
+  border: 2px solid $color-coral;
+  outline: 1px solid $color-coral;
+}
+
+.form__input:focus + .data-field__icon {
+  fill: $color-apple;
+  color: $color-apple;
+}
+
+.form__input:focus:invalid + .data-field__icon {
+  fill: $color-coral;
+  color: $color-coral;
+}

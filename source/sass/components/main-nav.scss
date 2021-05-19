@@ -84,6 +84,12 @@
   }
 }
 
+.main-nav__item--font.main-nav__item--current {
+  @media (min-width: $desktop) {
+    border-bottom: 2px solid $color-apple;
+  }
+}
+
 .main-nav__item:last-child {
   @media (min-width: $tablet) {
     margin-right: 13px;
