@@ -54,3 +54,7 @@
 .needs-field__input:disabled + .needs-field__label {
   opacity: 0.3;
 }
+
+.needs-field__input:focus + .needs-field__label {
+  outline: 1px solid $color-tundora;
+}

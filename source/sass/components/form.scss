@@ -167,16 +167,17 @@
 
 .form__input:hover {
   border: 2px solid $color-silver;
+  outline: none;
 }
 
 .form__input:focus {
   border: 2px solid $color-tundora;
-  outline: 1px solid $color-tundora;
+  outline: none;
 }
 
 .form__input:focus:invalid {
   border: 2px solid $color-coral;
-  outline: 1px solid $color-coral;
+  outline: none;
 }
 
 .form__input:focus + .data-field__icon {

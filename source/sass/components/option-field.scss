@@ -46,3 +46,7 @@
 .option-field__input:disabled + .option-field__label::before {
   opacity: 0.3;
 }
+
+.option-field__input:focus + .option-field__label {
+  outline: 1px solid $color-tundora;
+}
