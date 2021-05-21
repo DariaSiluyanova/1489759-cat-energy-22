@@ -7,20 +7,6 @@
   background-color: $color-apple;
   border: none;
 
-  &--show-all {
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-black;
-    background-color: $color-concrete;
-  }
-
-  &--order {
-    padding: 10px 0;
-    text-align: center;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
   @media (min-width: $tablet) {
     padding: 14px 26px;
     min-width: 244px;
@@ -38,6 +24,53 @@
       font-size: 20px;
     }
   }
+
+  &--order {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet) {
+      min-height: 39px;
+      min-width: 248px;
+      margin: 0 39px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $tablet) {
+      min-width: 168px;
+    }
+  }
+
+  &--show-all {
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+    background-color: $color-concrete;
+
+    @media (min-width: $tablet) {
+      min-height: 40px;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop) {
+      min-width: 100px;
+      margin: 0 30px;
+    }
+  }
+
+  &--add {
+    @media (min-width: $tablet) {
+      min-width: 100%;
+      margin: 24px 0 0;
+    }
+
+    @media (min-width: $desktop) {
+      min-width: 245px;
+      margin: 0;
+    }
+  }
 }
 
 .button:hover {
@@ -47,4 +80,17 @@
 .button:active {
   color: $color-white-strong;
   background-color: $color-green-button-hover;
+}
+
+.button--show-all:hover {
+  background-color: $color-galery;
+}
+
+.button--show-all:active {
+  color: $color-tundora-light;
+}
+
+.button--show-all:not(:hover):active {
+  color: $color-tundora-light;
+  background-color: $color-galery;
 }

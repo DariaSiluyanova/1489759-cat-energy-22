@@ -1,12 +1,12 @@
 .card {
-  outline: 3px solid greenyellow;
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-areas:
-    "img    img    title  gap"
+    "img    img    title  title"
     "img    img    meta   meta"
     "button button button button";
-  padding: 11px 0 14px;
+  padding: 13px 20px 25px;
+  border-bottom: 1px solid $color-galery;
 
   @media (min-width: $tablet) {
     grid-template-areas:
@@ -14,34 +14,70 @@
       "title  title  title  title"
       "meta   meta   meta   meta"
       "button button button button";
-    grid-template-rows: 2fr 1fr 1fr auto;
+    grid-template-rows: 242px repeat(3, auto);
     min-width: 324px;
     min-height: 511px;
-    padding: 36px;
+    padding: 0;
     background: linear-gradient($color-white 20%, $color-concrete 10%);
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 245px;
+    padding-bottom: 40px;
   }
 }
 
 .card__link-img {
   grid-area: img;
-  text-align: center;
 }
 
 .card__title {
   grid-area: title;
+  margin: 0 41px 12px 0;
+
+  @media (min-width: $tablet) {
+    grid-column: 2/4;
+    margin: 0 0 14px;
+    padding: 24px 10px 0;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 2/5;
+    padding: 31px 50px 0 0;
+  }
 }
 
 .card__meta {
   grid-area: meta;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
+    padding: 0 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 35px;
+    padding: 0 33px 0 40px;
   }
 }
 
 .card__button {
   grid-area: button;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 37px 40px;
+    align-self: center;
+    padding: 10px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 2/4;
+    justify-self: center;
+    margin: 0;
+  }
 }
 
 .card__link-title {

@@ -1,6 +1,4 @@
 .product-title {
-  margin: 0;
-
   @include title(16px, 20px);
   text-transform: uppercase;
   color: $color-mine-shaft;
@@ -9,6 +7,7 @@
     color: $color-cod-gray;
 
     @media (min-width: $tablet) {
+      margin: 0 0 25px;
       font-size: 20px;
       line-height: 22px;
     }
@@ -17,6 +16,10 @@
   &--add {
     @media (min-width: $tablet) {
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 26px 0;
     }
   }
 }

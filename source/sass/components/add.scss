@@ -1,22 +1,81 @@
 .add {
-  outline: 3px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 13px 0 19px;
+  padding: 10px 0 19px;
   font-size: 14px;
   line-height: 14px;
+  border-top: 1px solid $color-silver;
 
   @media (min-width: $tablet) {
+    align-items: center;
+    padding: 28px 36px 26px;
     font-size: 16px;
     line-height: 20px;
+    border: 1px solid $color-silver;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr 1fr;
+    padding: 0;
+    border-top: 1px solid $color-silver;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+}
+
+.add:last-child {
+  border-bottom: 1px solid $color-silver;
+}
+
+.add__name,
+.add__data {
+  margin: 11px 0 15px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
   }
 }
 
 .add__title {
   width: 100%;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    max-width: fit-content;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .add__button {
-  width: 100%;
+  min-width: 100%;
+
+  @media (min-width: $desktop) {
+    min-width: 244px;
+  }
+}
+
+.add__name {
+  @media (min-width: $tablet) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.add__data {
+  @media (min-width: $tablet) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
 }

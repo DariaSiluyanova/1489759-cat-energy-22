@@ -1,7 +1,16 @@
-.row {
-  outline: 3px solid brown;
+.row__data,
+.row__name {
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $color-silver;
+  }
 }
 
 .row__data {
   text-align: right;
+}
+
+.row__name {
+  @media (min-width: $tablet) {
+    padding: 7px 0 9px;
+  }
 }
