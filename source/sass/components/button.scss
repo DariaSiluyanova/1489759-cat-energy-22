@@ -32,18 +32,20 @@
     line-height: 20px;
 
     @media (min-width: $tablet) {
+      align-self: center;
       min-height: 39px;
       min-width: 248px;
-      margin: 0 39px;
-      font-size: 16px;
+      padding: 10px 0 0;
     }
 
     @media (min-width: $tablet) {
       min-width: 168px;
+      padding: 5px 0;
     }
   }
 
   &--show-all {
+    padding: 10px 0;
     font-size: 16px;
     line-height: 20px;
     color: $color-black;
@@ -56,19 +58,19 @@
 
     @media (min-width: $desktop) {
       min-width: 100px;
-      margin: 0 30px;
+      padding: 10px 45px;
     }
   }
 
   &--add {
     @media (min-width: $tablet) {
       min-width: 100%;
-      margin: 24px 0 0;
     }
 
     @media (min-width: $desktop) {
       min-width: 245px;
-      margin: 0;
+      align-self: center;
+      padding: 10px 0;
     }
   }
 }

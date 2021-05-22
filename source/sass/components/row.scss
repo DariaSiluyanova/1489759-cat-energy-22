@@ -10,7 +10,9 @@
 }
 
 .row__name {
+  padding: 2px 0;
+
   @media (min-width: $tablet) {
-    padding: 7px 0 9px;
+    padding: 8px 0 10px;
   }
 }

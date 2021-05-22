@@ -5,7 +5,7 @@
     "img    img    title  title"
     "img    img    meta   meta"
     "button button button button";
-  padding: 13px 20px 25px;
+  padding: 12px 20px 22px;
   border-bottom: 1px solid $color-galery;
 
   @media (min-width: $tablet) {
@@ -23,38 +23,53 @@
 
   @media (min-width: $desktop) {
     min-width: 245px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 }
 
 .card__link-img {
   grid-area: img;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $tablet) {
+    align-self: end;
+  }
+}
+
+.card__img {
+  @media (min-width: $tablet) {
+    width: 168px;
+    height: 206px;
+  }
 }
 
 .card__title {
   grid-area: title;
-  margin: 0 41px 12px 0;
+  margin: 0 41px 14px 0;
 
   @media (min-width: $tablet) {
     grid-column: 2/4;
     margin: 0 0 14px;
-    padding: 24px 10px 0;
+    padding: 24px 15px 0;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
-    grid-column: 2/5;
-    padding: 31px 50px 0 0;
+    grid-column: 1/5;
+    justify-self: center;
+    max-width: 157px;
+    padding: 31px 0 0;
   }
 }
 
 .card__meta {
   grid-area: meta;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet) {
     margin-bottom: 32px;
-    padding: 0 35px;
+    padding: 0 38px;
   }
 
   @media (min-width: $desktop) {
@@ -65,12 +80,10 @@
 
 .card__button {
   grid-area: button;
-  margin: 0;
+  margin: 6px 0 0;
 
   @media (min-width: $tablet) {
     margin: 0 37px 40px;
-    align-self: center;
-    padding: 10px 0 0;
   }
 
   @media (min-width: $desktop) {

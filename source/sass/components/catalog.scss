@@ -83,6 +83,7 @@
   }
 
   @media (min-width: $desktop) {
+    flex-basis: 100%;
     margin: 0 80px 0 0;
     padding: 0;
   }
@@ -130,10 +131,30 @@
   }
 
   @media (min-width: $desktop) {
-    flex-basis: 50%;
-    flex-grow: 1;
+    flex-basis: 27%;
+    flex-grow: 0;
     margin: 0;
   }
+}
+
+.catalog__add-item {
+  border-top: 1px solid $color-silver;
+
+  @media (min-width: $tablet) {
+    border: 1px solid $color-silver;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    border-top: 1px solid $color-silver;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+  }
+}
+
+.catalog__add-item:last-child {
+  border-bottom: 1px solid $color-silver;
 }
 
 .catalog__card {
@@ -148,39 +169,18 @@
   }
 }
 
-.catalog__card:nth-child(odd) .card__link-img {
-  justify-self: center;
-  max-width: 55%;
-  margin-top: 19px;
-
-  @media (min-width: $tablet) {
-    max-width: 100%;
-    margin-top: 60px;
-  }
-}
-
-.catalog__card:nth-child(even) .card__link-img {
-  justify-self: center;
-  max-width: 60%;
-  margin-top: 8px;
-
-  @media (min-width: $tablet) {
-    max-width: 100%;
-    margin-top: 33px;
-  }
-}
-
 .catalog__stock {
   @media (min-width: $tablet) {
     grid-column: 1/-1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 60px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 80px;
     margin-bottom: 15px;
     padding: 0 110px;
   }
@@ -188,10 +188,11 @@
 
 .catalog__more {
   @media (min-width: $tablet) {
-    margin-top: 107px;
+    margin-top: 106px;
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 30px;
     min-width: 245px;
   }
 }
