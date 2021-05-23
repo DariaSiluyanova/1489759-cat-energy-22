@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 30px 0 110px;
+    max-width: 1440px;
+    margin: 0 auto 0;
   }
 }
 
@@ -22,6 +23,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 110px 73px;
+    max-width: 1440px;
+    margin: 0 auto 73px;
   }
 }

@@ -23,25 +23,25 @@
 
 .advantages__item:first-child {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-1.png") 50% 75%;
+    background: no-repeat url("/img/card-plan-tablet-1.png") 60% 75%;
   }
 }
 
 .advantages__item:nth-child(2) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-2.png") 58% 75%;
+    background: no-repeat url("/img/card-plan-tablet-2.png") 73% 75%;
   }
 }
 
 .advantages__item:nth-child(3) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-3.png") 58% 75%;
+    background: no-repeat url("/img/card-plan-tablet-3.png") 73% 75%;
   }
 }
 
 .advantages__item:nth-child(4) {
   @media (min-width: $tablet) {
-    background: no-repeat url("/img/card-plan-tablet-4.png") 61% 75%;
+    background: no-repeat url("/img/card-plan-tablet-4.png") 78% 75%;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 151px 70px 57px 0;
+    padding: 151px 10px 57px;
     font-size: 16px;
     line-height: 24px;
   }

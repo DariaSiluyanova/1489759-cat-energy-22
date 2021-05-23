@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: $color-concrete;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -21,7 +20,9 @@
   }
 
   @media (min-width: $desktop) {
-    grid-column: 1/-1;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 13px 110px 50px;
   }
 }
@@ -98,5 +99,13 @@
 
   @media (min-width: $tablet) {
     height: 400px;
+  }
+}
+
+.page-footer__links {
+  background-color: $color-concrete;
+
+  @media (min-width: $desktop) {
+    grid-column: 1/-1;
   }
 }

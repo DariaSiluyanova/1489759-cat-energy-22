@@ -4,6 +4,10 @@
   @media (min-width: $tablet) {
     padding: 0;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
 }
 
 .card-advantages__title {
@@ -27,7 +31,7 @@
   }
 
   @media (min-width: $desktop) {
-    grid-gap: 37px 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 280px);
+    grid-gap: 0 45px;
   }
 }

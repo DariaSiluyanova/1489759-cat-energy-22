@@ -24,6 +24,12 @@
     grid-column: 1/-1;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .catalog__add {
@@ -38,7 +44,7 @@
   @media (min-width: $desktop) {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -53,8 +59,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 70px;
-    padding: 0 43px;
+    margin-left: 71px;
+    padding: 0 37px;
   }
 }
 
@@ -101,12 +107,18 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .catalog__add-content {
   @media (min-width: $desktop) {
     display: flex;
-    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 110px;
   }
 }
@@ -180,6 +192,9 @@
   @media (min-width: $desktop) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0 80px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 15px;
     padding: 0 110px;
   }

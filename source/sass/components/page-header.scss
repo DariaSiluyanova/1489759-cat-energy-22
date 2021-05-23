@@ -25,6 +25,9 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
   }
 }
@@ -104,4 +107,10 @@
 .page-header__promo {
   width: 100%;
   margin-bottom: 0;
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
