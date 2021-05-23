@@ -41,25 +41,25 @@
 
 .more__sign {
   position: relative;
-  margin: 0 122px 22px;
+  margin: 0 auto 22px;
   height: 32px;
+  width: 32px;
 
   @media (min-width: $tablet) {
-    width: 90px;
-    margin: 0 78px 49px;
+    width: 60px;
+    margin: 0 auto 49px;
     height: 60px;
   }
 
   @media (min-width: $desktop) {
-    width: 95px;
-    margin: 56px 72px 49px;
+    margin: 56px auto 49px;
   }
 }
 
 .more__cross {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 32px;
   height: 32px;
 
@@ -73,7 +73,6 @@
 .more__cross::after {
   content: "";
   position: absolute;
-  left: 15px;
   height: 33px;
   width: 2px;
   background-color: $color-alto;
