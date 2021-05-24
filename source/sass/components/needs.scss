@@ -61,7 +61,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 0;
+    margin-left: -40px;
+    padding: 0 40px;
   }
 }
 
@@ -101,5 +102,6 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 45px;
+    padding: 0 110px;
   }
 }
