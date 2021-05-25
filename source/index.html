@@ -103,7 +103,13 @@
                 <p class="promo__slogan title-style">Занялся собой? Займись котом!</p>
               </div>
             </div>
-            <img class="promo__image-can" src="/img/promo-background-food-can.jpg" alt="Оранжевая упаковка с питанием со вкусом курицы">
+            <div class="promo__image-can">
+              <picture>
+                <source media="(min-width: 1288px)" srcset="/img/promo-background-food-can-desktop.png 1x, /img/  promo-background-food-can-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="/img/promo-background-food-can-tablet.png 1x, /img/  promo-background-food-can-tablet@2x.png 2x">
+                <img src="/img/promo-background-food-can.png" srcset="/img/promo-background-food-can@2x.png 2x" alt="Оранжевая упаковка с питанием со вкусом курицы">
+              </picture>
+            </div>
             <button class="promo__button button title-style">Подобрать программу</button>
           </div>
         </div>
@@ -117,7 +123,11 @@
         <div class="goals__item card-goal">
           <div class="card-goal__header">
             <div class="card-goal__image">
-              <img class="card-goal__svg card-goal__svg--cat" src="/img/card-goal-slim-cat.svg" alt="Грациозный кот" width="36" height="50">
+              <picture>
+                <source media="(min-width: 1288px)" srcset="/img/card-goal-slim-cat-desktop.svg">
+                <source media="(min-width: 768px)" srcset="/img/card-goal-slim-cat-tablet.svg">
+                <img class="card-goal__svg card-goal__svg--cat" src="/img/card-goal-slim-cat.svg" alt="Грациозный кот">
+              </picture>
               <svg class="card-goal__svg-circle" width="60" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50%" cy="50%" r="40%" stroke="#68b738" fill="#68b738" stroke-width="5"/>
               </svg>
@@ -135,7 +145,11 @@
         <div class="goals__item card-goal card-goal--gain">
           <div class="card-goal__header">
             <div class="card-goal__image card-goal__image--panther">
-              <img class="card-goal__svg card-goal__svg--panther" src="/img/card-goal-add-panther.svg" alt="Мощная пантера">
+              <picture>
+                <source media="(min-width: 1288px)" srcset="/img/card-goal-add-panther-desktop.svg">
+                <source media="(min-width: 768px)" srcset="/img/card-goal-add-panther-tablet.svg">
+                <img class="card-goal__svg card-goal__svg--panther" src="/img/card-goal-add-panther.svg" alt="Мощная пантера">
+              </picture>
               <svg class="card-goal__svg-circle" width="60" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="50%" cy="50%" r="40%" stroke="#68b738" fill="#68b738" stroke-width="5"/>
               </svg>
@@ -156,19 +170,31 @@
         <h2 class="card-advantages__title title">Как это работает</h2>
         <ul class="card-advantages__list advantages">
           <li class="advantages__item">
-            <img class="advantages__svg" src="/img/card-plan-1.svg" alt="Листок">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/card-plan-1-tablet.svg">
+              <img class="advantages__svg" src="/img/card-plan-1.svg" alt="Листок">
+            </picture>
             <p class="advantages__desc">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__svg" src="/img/card-plan-2.svg" alt="Кипяток">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/card-plan-2-tablet.svg">
+              <img class="advantages__svg" src="/img/card-plan-2.svg" alt="Кипяток">
+            </picture>
             <p class="advantages__desc">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__svg" src="/img/card-plan-3.svg" alt="Столовые приборы">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/card-plan-3-tablet.svg">
+              <img class="advantages__svg" src="/img/card-plan-3.svg" alt="Столовые приборы">
+            </picture>
             <p class="advantages__desc">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__svg" src="/img/card-plan-4.svg" alt="Весы">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/card-plan-4-tablet.svg">
+              <img class="advantages__svg" src="/img/card-plan-4.svg" alt="Весы">
+            </picture>
             <p class="advantages__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца&nbsp;!</p>
           </li>
         </ul>
@@ -195,10 +221,22 @@
           <div class="card-example__slider slider">
             <div class="slider__image-wrapper">
               <div class="slider__image-container">
-                <img class="slider__image" src="/img/example-before.png" alt="Толстый кот">
+                <div class="slider__image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="/img/example-before-tablet.png, /img/example-before-tablet@2x.png 2x">
+                    <source media="(min-width: 1288px)" srcset="/img/example-before-desktop.png, /img/example-before-desktop@2x.png 2x">
+                    <img src="/img/example-before.png" alt="Толстый кот">
+                  </picture>
+                </div>
               </div>
-              <div class="slider__image-container--after">
-                <img class="slider__image slider__image--after" src="/img/example-after.png" alt="Кот в хорошей форме">
+              <div class="slider__image-container slider__image-container--after">
+                <div class="slider__image slider__image--after">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="/img/example-after-tablet.png, /img/example-after-tablet@2x.png 2x">
+                    <source media="(min-width: 1288px)" srcset="/img/example-after-desktop.png, /img/example-after-desktop@2x.png 2x">
+                    <img src="/img/example-after.png" alt="Кот в хорошей форме">
+                  </picture>
+                </div>
               </div>
             </div>
             <div class="slider__range">

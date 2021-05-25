@@ -3,14 +3,14 @@
 }
 
 .page-main__card {
-  margin: 0 0 42px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet) {
     margin: 0 30px 45px;
   }
 
   @media (min-width: $desktop) {
-    max-width: 1440px;
+    max-width: 1220px;
     margin: 0 auto 0;
   }
 }
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 1440px;
+    max-width: 1220px;
     margin: 0 auto 73px;
   }
 }

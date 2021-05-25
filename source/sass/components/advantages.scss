@@ -13,7 +13,8 @@
 
 .advantages__item {
   display: flex;
-  margin: 0 0 20px 0;
+  align-items: center;
+  margin: 0 0 16px 0;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -50,7 +51,8 @@
 }
 
 .advantages__desc {
-  margin: 0;
+  width: fit-content;
+  margin: 0 0 0 20px;
 
   @media (min-width: $tablet) {
     margin: 0;
