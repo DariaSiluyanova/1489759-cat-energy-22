@@ -1,22 +1,58 @@
 .offer {
-  outline: 3px solid green;
-  padding-top: 70px;
+  padding: 57px 0 0;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
   background: $color-apple url("/img/catalog-bg-gift.png") no-repeat center/cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/catalog-bg-gift@2x.png");
+  }
+
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 58px 80px 0;
     min-height: 200px;
+    background: $color-apple url("/img/catalog-bg-gift-tablet.png") no-repeat center/cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog-bg-gift-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    background: $color-apple url("/img/catalog-bg-gift-desktop.png") no-repeat center/cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog-bg-gift-desktop@2x.png");
+    }
   }
 }
 
 .offer__text {
+  margin: 44px 50px 0;
+
   @media (min-width: $tablet) {
-    max-width: 150px;
+    max-width: 185px;
+    margin: 14px 19px 0;
     text-align: start;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: initial;
+    margin: 14px 32px 0;
+    text-align: center;
+  }
+}
+
+.offer__icon-gift {
+  @media (min-width: $desktop) {
+    margin-top: 15px;
   }
 }

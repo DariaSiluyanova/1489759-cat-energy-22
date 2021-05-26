@@ -1,1 +1,7 @@
-//will be
+.main-layout__catalog {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 77px;
+  }
+}

@@ -1,11 +1,21 @@
 .more {
-  outline: 3px solid teal;
-  padding: 25px 0;
+  padding: 15px 20px 25px;
   text-align: center;
-}
+  border-bottom: 1px solid $color-alto;
 
-.more__lead {
-  line-height: 16px;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    align-self: start;
+    padding: 52px 38px 0;
+    border: 2px solid $color-concrete;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .more__vertical-line {
@@ -18,5 +28,89 @@
 
 .more__button {
   width: 100%;
-  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 35px;
+  }
+
+  @media (min-width: $desktop) {
+    width: fit-content;
+    margin: 0 0 38px;
+  }
+}
+
+.more__sign {
+  position: relative;
+  margin: 0 auto 22px;
+  height: 32px;
+  width: 32px;
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    margin: 0 auto 49px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 56px auto 49px;
+  }
+}
+
+.more__cross {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.more__cross::before,
+.more__cross::after {
+  content: "";
+  position: absolute;
+  height: 33px;
+  width: 2px;
+  background-color: $color-alto;
+
+  @media (min-width: $tablet) {
+    height: 60px;
+  }
+}
+
+.more__cross::after {
+  transform: rotate(90deg);
+}
+
+.more__lead {
+  margin: 0 0 20px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 89px;
+  }
+}
+
+.more__title {
+  margin-bottom: 9px;
+}
+
+.more__text {
+  @media (min-width: $tablet) {
+    max-width: 170px;
+    padding: 0;
+    margin: auto;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 178px;
+  }
 }

@@ -2,13 +2,28 @@
   @include title(36px, 36px);
   color: $color-white;
 
+  @media (min-width: $tablet) {
+    @include title(60px, 60px);
+    color: $color-black;
+  }
+
   &--form,
   &--catalog {
     color: $color-black;
   }
 
-  @media (min-width: $tablet) {
-    @include title(60px, 60px);
-    color: $color-black;
+  &--catalog {
+    padding: 23px 20px 40px;
+    border-top: 1px solid $color-concrete;
+    border-bottom: 1px solid $color-concrete;
+
+    @media (min-width: $tablet) {
+      padding: 46px 30px 0;
+      border: none;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0 790px 0 0;
+    }
   }
 }

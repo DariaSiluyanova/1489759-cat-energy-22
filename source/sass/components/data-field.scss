@@ -47,11 +47,19 @@
   @media (min-width: $tablet) {
     padding: 8px 23px;
   }
+
+  @media (min-width: $desktop) {
+    width: 486px;
+  }
 }
 
 .data-field__input-part--tel {
   @media (min-width: $tablet) {
     padding-left: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 472px;
   }
 }
 
