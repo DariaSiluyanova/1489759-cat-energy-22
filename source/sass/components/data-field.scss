@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  color: $color-tundora;
 }
 
 .data-field__label {
@@ -43,6 +42,18 @@
   }
 }
 
+.data-field__icon {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: 15px;
+
+  @media (min-width: $tablet) {
+    top: 16px;
+    right: 17px;
+  }
+}
+
 .data-field__input-part--contact {
   @media (min-width: $tablet) {
     padding: 8px 23px;
@@ -60,17 +71,5 @@
 
   @media (min-width: $desktop) {
     width: 472px;
-  }
-}
-
-.data-field__icon {
-  position: absolute;
-  z-index: 1;
-  top: 14px;
-  right: 15px;
-
-  @media (min-width: $tablet) {
-    top: 16px;
-    right: 17px;
   }
 }

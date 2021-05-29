@@ -26,11 +26,19 @@
   @media (min-width: $tablet) {
     background: no-repeat url("/img/card-plan-tablet-1.png") 60% 75%;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: no-repeat url("/img/card-plan-tablet-1@2x.png") 60% 75%;
+  }
 }
 
 .advantages__item:nth-child(2) {
   @media (min-width: $tablet) {
     background: no-repeat url("/img/card-plan-tablet-2.png") 73% 75%;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: no-repeat url("/img/card-plan-tablet-2@2x.png") 73% 75%;
   }
 }
 
@@ -38,11 +46,19 @@
   @media (min-width: $tablet) {
     background: no-repeat url("/img/card-plan-tablet-3.png") 73% 75%;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: no-repeat url("/img/card-plan-tablet-3@2x.png") 73% 75%;
+  }
 }
 
 .advantages__item:nth-child(4) {
   @media (min-width: $tablet) {
     background: no-repeat url("/img/card-plan-tablet-4.png") 78% 75%;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: no-repeat url("/img/card-plan-tablet-4@2x.png") 78% 75%;
   }
 }
 
