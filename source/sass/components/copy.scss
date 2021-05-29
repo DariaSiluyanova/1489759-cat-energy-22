@@ -12,6 +12,14 @@
   }
 }
 
+.copy__icon-link:hover {
+  color: $color-apple;
+}
+
+.copy__icon-link:active {
+  opacity: 0.3;
+}
+
 .copy__text {
   order: 1;
   margin-top: 30px;
@@ -37,12 +45,4 @@
 
 .copy__text:active {
   opacity: 0.3;
-}
-
-.copy__icon-color:hover {
-  fill: $color-apple;
-}
-
-.copy__icon-color:active {
-  fill-opacity: 0.3;
 }

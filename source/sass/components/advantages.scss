@@ -1,5 +1,5 @@
-.advantages__svg {
-  margin-right: 19px;
+.advantages__img {
+  min-width: 60px;
 
   @media (min-width: $tablet) {
     position: absolute;
@@ -7,7 +7,7 @@
     right: 150px;
     bottom: 160px;
     left: 0;
-    width: 80px;
+    min-width: 80px;
   }
 }
 
