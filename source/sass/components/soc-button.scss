@@ -1,12 +1,14 @@
-.soc-button__icon-color:hover {
+.soc-button__icon:hover {
   stroke: $color-apple;
 }
 
-.soc-button__icon-color:active {
+.soc-button__icon:active {
   stroke-opacity: 0.3;
 }
 
 .soc-button__icon {
+  stroke: $color-dove-gray;
+
   @media (min-width: $tablet) {
     min-width: 32px;
     min-height: 25px;

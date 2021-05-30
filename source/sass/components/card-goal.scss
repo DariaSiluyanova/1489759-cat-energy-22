@@ -168,14 +168,15 @@
     @media (min-width: $tablet) {
       top: 49px;
       left: 65px;
-      min-width: 140px;
+      width: 140px;
+      height: 192px;
     }
 
     @media (min-width: $desktop) {
-      top: 9px;
+      top: 15px;
       left: 13px;
-      min-width: 72px;
-      min-height: 84px;
+      width: 72px;
+      height: 84px;
     }
   }
 
@@ -185,14 +186,15 @@
 
     @media (min-width: $tablet) {
       top: 103px;
-      min-width: 267px;
+      width: 267px;
+      height: 112px;
     }
 
     @media (min-width: $desktop) {
       top: 35px;
       left: -22px;
-      min-width: 135px;
-      min-height: 58px;
+      width: 135px;
+      height: 58px;
     }
   }
 }

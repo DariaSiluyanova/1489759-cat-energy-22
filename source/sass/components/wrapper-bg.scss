@@ -7,5 +7,9 @@
     margin-bottom: 82px;
     background: linear-gradient(to right, $color-white 50%, $color-apple-promo 50%), no-repeat url("/img/promo-bg-desktop.png") right/contain, linear-gradient(to right, $color-white 50%, $color-bg-promo 50%);
     z-index: 2;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: linear-gradient(to right, $color-white 50%, $color-apple-promo 50%), no-repeat url("/img/promo-bg-desktop@2x.png") right/contain, linear-gradient(to right, $color-white 50%, $color-bg-promo 50%);
+    }
   }
 }
