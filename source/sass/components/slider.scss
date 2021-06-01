@@ -16,6 +16,17 @@
   }
 }
 
+.slider__range {
+  display: flex;
+  flex-basis: 100%;
+  margin: auto;
+
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+    justify-content: center;
+  }
+}
+
 .slider__button {
   flex-grow: 1;
   padding: 0;
@@ -81,93 +92,83 @@
   }
 }
 
-.slider__image-container {
-  position: relative;
-  display: block;
-  width: 320px;
-  height: 280px;
-
-  @media (min-width: $tablet) {
-    flex-basis: 50%;
-    height: 620px;
-    overflow: hidden;
-  }
-
-  @media (min-width: $desktop) {
-    overflow: hidden;
-    width: 365px;
-    height: 536px;
-  }
-
-  &--after {
-    display: none;
-
-    @media (min-width: $tablet) {
-      display: block;
-      position: relative;
-      width: 354px;
-      overflow: hidden;
-    }
-
-    @media (min-width: $desktop) {
-      width: 220px;
-    }
-  }
-}
-
-.slider__image {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  margin: 0;
-
-  @media (min-width: $tablet) {
-    top: 0;
-    right: -94%;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 0;
-  }
-
-  &--after {
-    @media (min-width: $tablet) {
-      position: absolute;
-      top: 0;
-      left: -85%;
-      margin: 0;
-    }
-
-    @media (min-width: $desktop) {
-      top: -11px;
-      right: 0;
-      left: -98%;
-      max-width: 650px;
-    }
-  }
-}
-
 .slider__image-wrapper {
   @media (min-width: $tablet) {
     display: flex;
+    justify-content: center;
     margin: auto;
     margin-bottom: 22px;
   }
 
   @media (min-width: $desktop) {
+    grid-template-columns: 2/3;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: auto;
   }
 }
 
-.slider__range {
-  display: flex;
-  flex-basis: 100%;
-  margin: auto;
+.slider__image {
+  @media (min-width: $tablet) {
+    flex-basis: 50%;
+  }
+}
+
+.slider__image--before {
+  width: 320px;
+  height: 232px;
+  background-image: url("/img/example-before.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("/img/example-before@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    width: 432px;
+    height: 620px;
+    background-image: url("/img/example-before-tablet.png");
+    background-position: -20px;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/example-before-tablet@2x.png");
+    }
+  }
 
   @media (min-width: $desktop) {
-    padding-top: 20px;
-    justify-content: flex-end;
+    width: 445px;
+    height: 520px;
+    background-position: -30px;
+    background-image: url("/img/example-before-desktop.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/example-before-desktop@2x.png");
+    }
+  }
+}
+
+.slider__image--after {
+  @media (min-width: $tablet) {
+    display: block;
+    width: 354px;
+    height: 620px;
+    background: url("/img/example-after-tablet.png") 125% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: url("/img/example-after-tablet@2x.png") 125% no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 210px;
+    height: 536px;
+    background: url("/img/example-after-deskop.png") 112% no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("/img/example-after-desktop@2x.png");
+    }
   }
 }
