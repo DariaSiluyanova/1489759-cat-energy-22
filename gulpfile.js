@@ -27,7 +27,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.scc"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -36,7 +36,7 @@ exports.styles = styles;
 //Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/scripts.js")
+  return gulp.src("source/js/scripts.js", {allowEmpty: true})
     .pipe(terser())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
