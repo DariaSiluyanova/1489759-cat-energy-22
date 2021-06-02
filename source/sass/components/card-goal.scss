@@ -164,6 +164,8 @@
   &--cat {
     top: 10px;
     left: 8px;
+    width: 36px;
+    height: 50px;
 
     @media (min-width: $tablet) {
       top: 49px;
@@ -183,6 +185,8 @@
   &--panther {
     top: 23px;
     left: -6px;
+    width: 67px;
+    height: 28px;
 
     @media (min-width: $tablet) {
       top: 103px;
