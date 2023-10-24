@@ -3,24 +3,23 @@
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "10.2.5",
-    "browser-sync": "2.26.14",
-    "gulp": "4.0.2",
+    "autoprefixer": "10.4.16",
+    "browser-sync": "2.29.3",
+    "gulp": "^4.0.0",
     "gulp-plumber": "1.2.1",
-    "gulp-postcss": "9.0.0",
-    "gulp-sass": "4.1.0",
+    "gulp-postcss": "9.0.1",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "3.0.0",
-    "postcss": "8.2.8",
-    "stylelint": "13.12.0",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "postcss": "8.4.31",
+    "stylelint": "15.11.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "preinstall": "npx npm-force-resolutions"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,6 +35,15 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "14.15.0"
+    "node": "v16.17.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.11"
+  },
+  "dependencies": {
+    "sass": "^1.69.4"
   }
 }
