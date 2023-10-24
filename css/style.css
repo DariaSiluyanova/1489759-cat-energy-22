@@ -271,45 +271,45 @@ img {
 
 @media (min-width: 768px) {
   .advantages__item:first-child {
-    background: no-repeat url("/img/card-plan-tablet-1.png") 60% 75%;
+    background: no-repeat url("img/card-plan-tablet-1.png") 60% 75%;
   }
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item:first-child {
-    background: no-repeat url("/img/card-plan-tablet-1@2x.png") 60% 75%;
+    background: no-repeat url("img/card-plan-tablet-1@2x.png") 60% 75%;
   }
 }
 
 @media (min-width: 768px) {
   .advantages__item:nth-child(2) {
-    background: no-repeat url("/img/card-plan-tablet-2.png") 73% 75%;
+    background: no-repeat url("img/card-plan-tablet-2.png") 73% 75%;
   }
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item:nth-child(2) {
-    background: no-repeat url("/img/card-plan-tablet-2@2x.png") 73% 75%;
+    background: no-repeat url("img/card-plan-tablet-2@2x.png") 73% 75%;
   }
 }
 
 @media (min-width: 768px) {
   .advantages__item:nth-child(3) {
-    background: no-repeat url("/img/card-plan-tablet-3.png") 73% 75%;
+    background: no-repeat url("img/card-plan-tablet-3.png") 73% 75%;
   }
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item:nth-child(3) {
-    background: no-repeat url("/img/card-plan-tablet-3@2x.png") 73% 75%;
+    background: no-repeat url("img/card-plan-tablet-3@2x.png") 73% 75%;
   }
 }
 
 @media (min-width: 768px) {
   .advantages__item:nth-child(4) {
-    background: no-repeat url("/img/card-plan-tablet-4.png") 78% 75%;
+    background: no-repeat url("img/card-plan-tablet-4.png") 78% 75%;
   }
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantages__item:nth-child(4) {
-    background: no-repeat url("/img/card-plan-tablet-4@2x.png") 78% 75%;
+    background: no-repeat url("img/card-plan-tablet-4@2x.png") 78% 75%;
   }
 }
 
@@ -2201,7 +2201,7 @@ img {
   left: 0;
   width: 2em;
   height: 2em;
-  background: url("/img/checked.svg") center no-repeat;
+  background: url("img/checked.svg") center no-repeat;
   border: 2px solid #cdcdcd;
 }
 
@@ -2343,11 +2343,11 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background: #68b738 url("/img/catalog-bg-gift.png") no-repeat center/cover;
+  background: #68b738 url("img/catalog-bg-gift.png") no-repeat center/cover;
 }
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .offer {
-    background-image: url("/img/catalog-bg-gift@2x.png");
+    background-image: url("img/catalog-bg-gift@2x.png");
   }
 }
 @media (min-width: 768px) {
@@ -2356,12 +2356,12 @@ img {
     justify-content: space-between;
     padding: 58px 80px 0;
     min-height: 200px;
-    background: #68b738 url("/img/catalog-bg-gift-tablet.png") no-repeat center/cover;
+    background: #68b738 url("img/catalog-bg-gift-tablet.png") no-repeat center/cover;
   }
 }
 @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .offer {
-    background-image: url("/img/catalog-bg-gift-tablet@2x.png");
+    background-image: url("img/catalog-bg-gift-tablet@2x.png");
   }
 }
 @media (min-width: 1288px) {
@@ -2370,12 +2370,12 @@ img {
     align-items: center;
     justify-content: space-evenly;
     padding: 0;
-    background: #68b738 url("/img/catalog-bg-gift-desktop.png") no-repeat center/cover;
+    background: #68b738 url("img/catalog-bg-gift-desktop.png") no-repeat center/cover;
   }
 }
 @media (min-width: 1288px) and (min-resolution: 144dpi), (min-width: 1288px) and (min-resolution: 1.5dppx) {
   .offer {
-    background-image: url("/img/catalog-bg-gift-desktop@2x.png");
+    background-image: url("img/catalog-bg-gift-desktop@2x.png");
   }
 }
 
