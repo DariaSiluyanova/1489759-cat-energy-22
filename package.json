@@ -10,15 +10,15 @@
     "gulp-postcss": "9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "3.0.0",
-    "postcss": "8.4.31",
+    "postcss": "^8.4.31",
+    "scss": "^0.2.4",
     "stylelint": "15.11.0"
   },
   "scripts": {
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "stylelint": "stylelint \"sass/**/*.scss\" --customSyntax scss",
+    "test": "npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp",
-    "preinstall": "npx npm-force-resolutions"
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
@@ -27,9 +27,6 @@
   ],
   "engines": {
     "node": "v16.17.0"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.11"
   },
   "overrides": {
     "graceful-fs": "^4.2.11"
